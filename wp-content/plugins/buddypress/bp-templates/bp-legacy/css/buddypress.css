@@ -1193,7 +1193,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 #buddypress ul.item-list li {
 	border-bottom: 1px solid #eaeaea;
-	padding: 15px 0;
+	padding: 15px;
 	margin: 0;
 	position: relative;
 	list-style: none;
