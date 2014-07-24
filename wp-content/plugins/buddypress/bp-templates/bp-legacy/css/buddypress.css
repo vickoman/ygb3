@@ -1091,7 +1091,7 @@ a.bp-title-button {
 	background-color: #ffd;
 	border: 1px solid #cb2;
 	color: #440;
-	
+
 }
 #buddypress div#item-header {
 	overflow: hidden;
@@ -1152,7 +1152,7 @@ a.bp-title-button {
 	margin: 0 0 5px 0;
 }
 #buddypress div#item-header ul {
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	overflow: hidden;
 }
 #buddypress div#item-header ul h5,
@@ -1161,7 +1161,7 @@ a.bp-title-button {
 	display: none;
 }
 #buddypress div#item-header ul li {
-	float: right;
+	float: left;
 	list-style: none;
 }
 #buddypress div#item-header ul img.avatar,
@@ -1268,7 +1268,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #buddypress div.item-list-tabs ul li a,
 #buddypress div.item-list-tabs ul li span {
 	display: block;
-	padding: 5px 10px;
+	padding: 2px 10px;
 	text-decoration: none;
 }
 #buddypress div.item-list-tabs ul li a span {
@@ -1317,7 +1317,10 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	list-style: none;
 }
 
-
+#buddypress #item-header-avatar{
+	position: absolute;
+	top:0px;
+}
 /*--------------------------------------------------------------
 3.9 - Private Messaging Threads
 --------------------------------------------------------------*/

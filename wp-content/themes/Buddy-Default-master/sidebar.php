@@ -1,7 +1,7 @@
 <?php do_action( 'bp_before_sidebar' ); ?>
 
-<div id="sidebar" role="complementary">
-	<div class="padder">
+		<div class="col-md-4 col-lg-3" role="complementary">
+
 
 	<?php do_action( 'bp_inside_before_sidebar' ); ?>
 
@@ -9,16 +9,21 @@
 
 		<?php do_action( 'bp_before_sidebar_me' ); ?>
 
-		<div id="sidebar-me">
-			<a href="<?php echo bp_loggedin_user_domain(); ?>">
-				<?php bp_loggedin_user_avatar( 'type=thumb&width=40&height=40' ); ?>
-			</a>
-
-			<h4><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h4>
-			<a class="button logout" href="<?php echo wp_logout_url( wp_guess_url() ); ?>"><?php _e( 'Log Out', 'buddypress' ); ?></a>
-
-			<?php do_action( 'bp_sidebar_me' ); ?>
-		</div>
+			<div class="widget">
+				<div class="widget-body text-center">
+					<a href="<?php echo bp_loggedin_user_domain(); ?>">
+									<?php bp_loggedin_user_avatar( 'type=full&width=130&height=130' ); ?>
+					</a>
+					<h2 class="strong margin-none"><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h2>
+					<div class="innerB">Working at MOSAICPRO</div>
+					<a href="" class="btn btn-primary text-center btn-block">PRO Account</a>
+					<div class="btn-group-vertical btn-block">
+						<a href="/members/<?php bp_displayed_user_mentionname(); ?>/profile/edit/group/1/" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Edit Account</a>
+						<a href="<?php echo wp_logout_url( wp_guess_url() ); ?>" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Logout</a>
+					</div>
+				</div>
+				<?php do_action( 'bp_sidebar_me' ); ?>
+			</div>
 
 		<?php do_action( 'bp_after_sidebar_me' ); ?>
 
@@ -31,7 +36,7 @@
 		<?php do_action( 'bp_before_sidebar_login_form' ); ?>
 
 		<?php if ( bp_get_signup_allowed() ) : ?>
-		
+
 			<p id="login-text">
 
 				<?php printf( __( 'Please <a href="%s" title="Create an account">create an account</a> to get started.', 'buddypress' ), bp_get_signup_page() ); ?>
@@ -49,7 +54,7 @@
 
 			<p class="forgetmenot"><label><input name="rememberme" type="checkbox" id="sidebar-rememberme" value="forever" tabindex="99" /> <?php _e( 'Remember Me', 'buddypress' ); ?></label></p>
 
-			<input type="submit" name="wp-submit" id="sidebar-wp-submit" value="<?php _e( 'Log In', 'buddypress' ); ?>" tabindex="100" />
+			<input type="submit" name="wp-submit" id="sidebar-wp-submit" value="<?php esc_attr_e( 'Log In', 'buddypress' ); ?>" tabindex="100" />
 
 			<?php do_action( 'bp_sidebar_login_form' ); ?>
 
@@ -73,7 +78,7 @@
 
 	<?php wp_meta(); ?>
 
-	</div><!-- .padder -->
+
 </div><!-- #sidebar -->
 
 <?php do_action( 'bp_after_sidebar' ); ?>

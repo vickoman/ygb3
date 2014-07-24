@@ -4,15 +4,15 @@ Template Name: Home
 */
 global $bp;
 ?>
-<?php get_header(); ?>	
+<?php get_header(); ?>
 <?php echo 'asdads'.$bp->loggedin_user->id; ?>
 <div class="innerAll">
 	<div class="row">
 		<div class="col-lg-9 col-md-8">
-			<div class="timeline-cover">	
+			<div class="timeline-cover">
 	<div class="cover">
 		<div class="top">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/photodune-2755655-party-time-s.jpg" class="img-responsive">					
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/photodune-2755655-party-time-s.jpg" class="img-responsive">
 		</div>
 		<ul class="list-unstyled">
 			<li class="active"><a href="<?php echo home_url(); ?>/members/"><i class="fa fa-fw fa-clock-o"></i> <span>Mi Actividad</span></a></li>
@@ -25,7 +25,7 @@ global $bp;
 	<div class="widget">
 		<div class="widget-body padding-none margin-none">
 			<div class="innerAll">
-				<i class="fa fa-quote-left text-muted pull-left fa-fw"></i> 
+				<i class="fa fa-quote-left text-muted pull-left fa-fw"></i>
 				<p class="lead margin-none">What a fun Partyyy</p>
 			</div>
 		</div>
@@ -33,42 +33,42 @@ global $bp;
 
 		<?php bp_get_template_part( 'buddypress/activity/index' ); ?>
 
-	<?php endif; ?>		
+	<?php endif; ?>
 	</div>
 </div>
 
 
 
 			<div class="gridalicious-row gridalicious" data-toggle="gridalicious" data-gridalicious-width="340" data-gridalicious-gutter="12" data-gridalicious-selector=".gridalicious-item">
-				
+
 				<div class="loaded">
 					<!-- Widget -->
-					
+
 					<!-- //End Widget -->
 					<!-- Widget -->
-					
+
 					<!-- //End Widget -->
 					<!-- Widget -->
-					
+
 					<!-- //End Widget -->
-					
+
 					<!-- Widget -->
-					
-					<!-- //End Widget -->
-					<!-- Widget -->
-						
-					<!-- //End Widget -->	
-					<!-- Widget -->
-					
+
 					<!-- //End Widget -->
 					<!-- Widget -->
-					
+
 					<!-- //End Widget -->
 					<!-- Widget -->
-					
+
 					<!-- //End Widget -->
 					<!-- Widget -->
-					
+
+					<!-- //End Widget -->
+					<!-- Widget -->
+
+					<!-- //End Widget -->
+					<!-- Widget -->
+
 					<!-- //End Widget -->
 				</div>
 			<div id="clearybih7" style="clear: both; height: 0px; width: 0px; display: block;"></div><div class="galcolumn" id="item0mNtW2" style="width: 49.37823834196891%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;"><div class="widget gridalicious-item not-responsive" style="margin-bottom: 12px; zoom: 1; opacity: 1;">
@@ -118,12 +118,12 @@ global $bp;
 						<div class="widget margin-none">
 							<div class="row row-merge">
 								<div class="col-md-5 text-center">
-										
+
 										<a class="text-large innerT media-object"><i class="fa fa-sun-o fa-3x text-inverse"></i></a>
-									
+
 										<p class="lead strong">Sunny</p>
 										<div class="clearfix"></div>
-									
+
 								</div>
 								<div class="col-md-7">
 									<div class="text-center">
@@ -148,15 +148,15 @@ global $bp;
 								<div class="innerAll">
 									<a href="" class="text-white text-medium">Fun Party in Rome </a>
 									<span class="display-block">on 15th January, 2014</span>
-								</div>										
+								</div>
 							</div>
-						</div>	
+						</div>
 
 						<!-- Comment -->
 						<div class="bg-gray border-bottom innerAll text-small ">
 							<span>View all <a href="" class="strong text-primary">1 Comment</a></span>
 						</div>
-						
+
 						<!-- First Comment -->
 						<div class="media margin-none bg-gray">
 							<a href="" class="pull-left innerAll">
@@ -192,15 +192,15 @@ global $bp;
 						</div>
 
 						<!-- Content -->
-						
+
 						<div id="weather-carousel" class="carousel slide innerAll" data-ride="carousel">
 						  <!-- Wrapper for slides -->
 							<div class="carousel-inner ">
 							    <div class="item bg-white">
 									<div class="pull-right innerR"><span class="text-large">26 <i class="text-danger icon-thermometer-1"></i></span></div>
 									<h4 class="strong innerL margin-none">Monday</h4>
-									<p class=" innerL margin-none"><span class="text-inverse">23.02.2014</span></p>					
-									<div class="clearfix"></div>								
+									<p class=" innerL margin-none"><span class="text-inverse">23.02.2014</span></p>
+									<div class="clearfix"></div>
 									<div class="media margin-none innerTB half">
 										<a href="#" class="media-object pull-left ">
 											<div class="text-center text-xxlarge innerAll">
@@ -251,8 +251,8 @@ global $bp;
 							    <div class="item bg-white active left">
 									<div class="pull-right innerR"><span class="text-large">26 <i class="text-danger icon-thermometer-1"></i></span></div>
 									<h4 class="strong innerL margin-none">Tuesday</h4>
-									<p class=" innerL margin-none"><span class="text-inverse">24.02.2014</span></p>					
-									<div class="clearfix"></div>								
+									<p class=" innerL margin-none"><span class="text-inverse">24.02.2014</span></p>
+									<div class="clearfix"></div>
 									<div class="media margin-none innerTB half">
 										<a href="#" class="media-object pull-left ">
 											<div class="text-center text-xxlarge innerAll">
@@ -303,8 +303,8 @@ global $bp;
 							    <div class="item  bg-white next left">
 									<div class="pull-right innerR"><span class="text-large">20 <i class="text-danger icon-thermometer-1"></i></span></div>
 									<h4 class="strong innerL margin-none">Wednesday</h4>
-									<p class=" innerL margin-none"><span class="text-inverse">25.02.2014</span></p>					
-									<div class="clearfix"></div>								
+									<p class=" innerL margin-none"><span class="text-inverse">25.02.2014</span></p>
+									<div class="clearfix"></div>
 									<div class="media margin-none innerTB half">
 										<a href="#" class="media-object pull-left ">
 											<div class="text-center text-xxlarge innerAll">
@@ -352,7 +352,7 @@ global $bp;
 										<div class="clearfix"></div>
 									</div>
 							    </div>
-							    
+
 							</div>
 
 							<ol class="carousel-indicators">
@@ -361,7 +361,7 @@ global $bp;
 							    <li data-target="#weather-carousel" data-slide-to="2" class=""></li>
 							</ol>
 						</div>
-						
+
 					</div><div class="widget gridalicious-item not-responsive" style="margin-bottom: 12px; zoom: 1; opacity: 1;">
 
 						<div class="media">
@@ -372,7 +372,7 @@ global $bp;
 								<span>on 15th January, 2014</span>
 							</div>
 						</div>
-					
+
 						<!-- Content -->
 						<a href=""><img src="../assets/images/photodune-2755655-party-time-s.jpg" alt="" class="img-responsive" style="width: auto; height: auto; display: block; margin-left: auto; margin-right: auto;"></a>
 
@@ -380,7 +380,7 @@ global $bp;
 						<div class="bg-primary innerAll text-small ">
 							<span>View all <a href="" class="strong text-white">1 Comment</a></span>
 						</div>
-						
+
 						<!-- First Comment -->
 						<div class="media margin-none">
 							<a href="" class="pull-left innerAll"><img src="../assets/images/people/50/5.jpg" width="50" class="media-object" style="width: auto; height: auto; display: block; margin-left: auto; margin-right: auto;"></a>
@@ -392,7 +392,7 @@ global $bp;
 								<a href="" class="text-small">mark it</a>
 							</div>
 						</div>
-						
+
 						<div class="input-group comment">
 							<input type="text" class="form-control" placeholder="Your comment here...">
 							<div class="input-group-btn">
@@ -436,9 +436,9 @@ global $bp;
 												<i class="fa fa-star" style="color:#EB9618;"></i>
 												<i class="fa fa-star" style="color:#ccc;"></i>
 											</p>
-											<small class="text-muted ">342 Likes</small> 
+											<small class="text-muted ">342 Likes</small>
 										</div>
-										<p class="margin-none innerTB half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, doloribus eum placeat deserunt voluptatibus aperiam.</p>		
+										<p class="margin-none innerTB half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, doloribus eum placeat deserunt voluptatibus aperiam.</p>
 										<a href="#" class="btn btn-xs btn-inverse">View</a>
 									</div>
 								</div>
@@ -448,7 +448,7 @@ global $bp;
 
 						<a href="#comments-collapse" class="innerAll border-top display-block " data-toggle="collapse"><i class="innerLR fa fa-bars"></i> View all comments <span class="text-muted">2+ comments</span></a>
 
-						<div class="collapse" id="comments-collapse">	
+						<div class="collapse" id="comments-collapse">
 							<!-- First Comment -->
 							<div class="media border-bottom margin-none bg-gray">
 								<a href="" class="pull-left innerAll"><img src="../assets/images/people/50/2.jpg" width="50" class="media-object" style="width: auto; height: auto; display: block; margin-left: auto; margin-right: auto;"></a>
@@ -516,7 +516,7 @@ global $bp;
 						<div class="bg-gray innerAll border-top border-bottom text-small ">
 							<span>View all <a href="" class="text-primary">1 Comment</a></span>
 						</div>
-						
+
 						<!-- First Comment -->
 						<div class="media margin-none bg-gray">
 							<a href="" class="pull-left innerAll"><img src="../assets/images/people/50/18.jpg" width="50" class="media-object" style="width: auto; height: auto; display: block; margin-left: auto; margin-right: auto;"></a>
@@ -555,13 +555,13 @@ global $bp;
 							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, impedit minus non commodi facere doloribus nemo ea voluptate nesciunt deleniti.</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, iste omnis fugiat porro consequuntur ratione iure error reprehenderit cum est ab similique magnam molestias aperiam voluptatibus quia aliquid! Sed, minima, totam, omnis delectus autem placeat quod velit sapiente odit error numquam neque atque quae facere laborum. Non, suscipit obcaecati nobis.</p>
 							<blockquote class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, delectus!</blockquote>
-							
+
 						</div>
 						<!-- Comment -->
 						<div class="bg-gray innerAll border-top border-bottom text-small ">
 							<span>View all <a href="" class="text-primary">2 Comments</a></span>
 						</div>
-						
+
 						<!-- First Comment -->
 						<div class="media border-bottom margin-none bg-gray">
 							<a href="" class="pull-left innerAll half">
@@ -590,7 +590,7 @@ global $bp;
 								<div>- Happy Birthday Hun...</div>
 							</div>
 						</div>
-						
+
 						<input type="text" class="form-control" placeholder="Comment here...">
 
 					</div><div class="widget gridalicious-item not-responsive" style="margin-bottom: 12px; zoom: 1; opacity: 1;">
@@ -621,7 +621,7 @@ global $bp;
 						<div class="bg-gray innerAll border-top border-bottom text-small ">
 							<span>View all <a href="" class="text-primary">2 Comments</a></span>
 						</div>
-						
+
 						<!-- First Comment -->
 						<div class="media border-bottom margin-none bg-gray">
 							<a href="" class="pull-left innerAll"><img src="../assets/images/people/50/2.jpg" width="50" class="media-object" style="width: auto; height: auto; display: block; margin-left: auto; margin-right: auto;"></a>
@@ -680,7 +680,7 @@ global $bp;
 					<i class="fa fa-comments"></i> 4
 				</a>
 				<h5 class="margin-none"><a href="" class="text-inverse">Social Admin Released</a></h5>
-				<small>on February 2nd, 2014 </small> 
+				<small>on February 2nd, 2014 </small>
 			</div>
 		</div>
 				<div class="media border-bottom innerAll margin-none">
@@ -690,7 +690,7 @@ global $bp;
 					<i class="fa fa-comments"></i> 4
 				</a>
 				<h5 class="margin-none"><a href="" class="text-inverse">Timeline Cover Page</a></h5>
-				<small>on February 2nd, 2014 </small> 
+				<small>on February 2nd, 2014 </small>
 			</div>
 		</div>
 				<div class="media border-bottom innerAll margin-none">
@@ -700,7 +700,7 @@ global $bp;
 					<i class="fa fa-comments"></i> 4
 				</a>
 				<h5 class="margin-none"><a href="" class="text-inverse">1000+ Sales</a></h5>
-				<small>on February 2nd, 2014 </small> 
+				<small>on February 2nd, 2014 </small>
 			</div>
 		</div>
 				<div class="media border-bottom innerAll margin-none">
@@ -710,7 +710,7 @@ global $bp;
 					<i class="fa fa-comments"></i> 4
 				</a>
 				<h5 class="margin-none"><a href="" class="text-inverse">On-Page Optimization</a></h5>
-				<small>on February 2nd, 2014 </small> 
+				<small>on February 2nd, 2014 </small>
 			</div>
 		</div>
 				<div class="media border-bottom innerAll margin-none">
@@ -720,7 +720,7 @@ global $bp;
 					<i class="fa fa-comments"></i> 4
 				</a>
 				<h5 class="margin-none"><a href="" class="text-inverse">14th Admin Template</a></h5>
-				<small>on February 2nd, 2014 </small> 
+				<small>on February 2nd, 2014 </small>
 			</div>
 		</div>
 			</div>
@@ -728,13 +728,13 @@ global $bp;
 
 			<!-- Widget -->
 <div class="widget widget-heading-simple widget-body-white">
-		
+
 	<!-- Widget Heading -->
 	<div class="widget-head">
 		<h4 class="heading glyphicons glyphicons-social twitter"><i></i>Twitter feed</h4>
 	</div>
 	<!-- // Widget Heading END -->
-	
+
 	<div class="widget-body" data-builder-exclude="element children">
 		<div class="jstwitter" data-gridalicious="false" data-type="slide" data-images="false"><span class="label label-default">Loading .. </span></div>
 	</div>
@@ -743,7 +743,7 @@ global $bp;
 
 
 
-		
+
 		</div>
 	</div>
 </div>
