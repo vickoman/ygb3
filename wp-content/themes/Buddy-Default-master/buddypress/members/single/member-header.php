@@ -10,7 +10,28 @@
 ?>
 
 <?php do_action( 'bp_before_member_header' ); ?>
+<!-- modificado por Martin foto portada-->
 
+			<div class="timeline-cover">
+	<div class="cover">
+		<div class="top">
+			<img src="<?php echo bloginfo('template_directory'); ?>/images/photodune-2755655-party-time-s.jpg" class="img-responsive" />
+		</div>
+		<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+					<ul class="list-unstyled">
+
+						<?php bp_get_displayed_user_nav(); ?>
+
+						<?php do_action( 'bp_member_options_nav' ); ?>
+
+					</ul>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- fin modificado por Martin foto portada-->
 <div id="item-header-avatar">
 	<a href="<?php bp_displayed_user_link(); ?>">
 

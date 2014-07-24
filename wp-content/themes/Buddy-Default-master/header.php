@@ -1,4 +1,4 @@
-<?php		
+<?php
 			if (! is_user_logged_in() ) {
 				wp_redirect( home_url() . '/acceso');
 			}
@@ -8,11 +8,11 @@
 	<head profile="http://gmpg.org/xfn/11">
 		<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 
-		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />		
-		<!-- 
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<!--
 		**********************************************************
 		In development, use the LESS files and the less.js compiler
 		instead of the minified CSS loaded by default.
@@ -21,10 +21,10 @@
 		-->
 
 			<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/components/library/bootstrap/css/bootstrap.min.css" /><![endif]-->
-		
-			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/admin/module.admin.stylesheet-complete.min.css" />
-		
-		
+
+			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
+
+
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -38,16 +38,18 @@
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/charts_flot/excanvas.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/core_browser/ie/ie.prototype.polyfill.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<?php bp_head(); ?>
-		<?php wp_head(); ?>		
-		<?php global $bp; ?>
-
+		<?php wp_head(); ?>
+		<?php global $bp;
+		global $current_user;
+        get_currentuserinfo();
+		?>
 	</head>
 
-	<body id="">
+	<body id="bp-default">
 		<?php do_action( 'bp_before_header' ); ?>
-		
+
 		<!-- Navbar -->
-		
+		<div>
 			<div class="navbar hidden-print navbar-default box main" role="navigation">
 				<div class="user-action  pull-right">
 					<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><?php bp_site_name(); ?></a>
@@ -65,8 +67,8 @@
 							<?php global $messages_template;?>
 								<?php $x=1; while ( bp_message_threads() ) : bp_message_thread(); ?>
 		 							<?php if ($x <= 3): ?>
-			 							<?php if (bp_message_thread_has_unread()): ?> 								 						
-			 							<li class="media">			 								
+			 							<?php if (bp_message_thread_has_unread()): ?>
+			 							<li class="media">
 								        	<a class="pull-left" href="<?php echo bp_get_message_thread_view_link(); ?>"><img class="media-object thumb" src="<?php echo bp_core_fetch_avatar(array('item_id'=> $messages_template->thread->last_sender_id, 'type' => $type, 'html' => $html, 'alt' => $alt));?>" alt="50x50" width="50"/></a>
 											<div class="media-body">
 									        	<span class="label label-default pull-right"><?php bp_message_thread_last_post_date();?></span>
@@ -74,10 +76,10 @@
 									            <p class="margin-none"><?php echo bp_get_message_thread_excerpt();?></p>
 									            <span><a href="<?php echo bp_get_message_thread_view_link(); ?>">Ver</a></span>
 									        </div>
-										</li>			
+										</li>
 										<?php endif; ?>
 		 							<?php endif; ?>
-						      							      
+
 							      <?php //bp_message_thread_id() ?>
 							      <?php //bp_message_thread_has_unread() ?>
 							      <?php //bp_message_thread_unread_count() ?>
@@ -88,13 +90,13 @@
 							      <?php //bp_message_thread_subject() ?>
 							      <?php //bp_message_thread_excerpt() ?>
 							      <?php //bp_message_thread_delete_link() ?>
-							    
+
 							  <?php $x++; endwhile; ?>
-																										     
+
 							<?php endif; ?>
 							<?php else: ?>
-							<li class="media">						        
-								<div class="media-body">						        	
+							<li class="media">
+								<div class="media-body">
 						            <p class="margin-none">No tienes mensajes nuevos :(</p>
 						        </div>
 							</li>
@@ -115,9 +117,8 @@
 							</span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="about_1.html?lang=en" >About </a></li>
-							<li><a href="messages.html?lang=en">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
-							<li><a href="timeline_3.html?lang=en">Profile</a></li>
+							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/profile" >Mi peril </a></li>
+							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/messages">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
 							<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>">Salir</a></li>
 					    </ul>
 					</div>
@@ -125,13 +126,14 @@
 				<div class="input-group hidden-xs pull-left">
 					<form action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
 				  	<span class="input-group-addon"><i class="icon-search"></i></span>
-				  	<input type="text" id="search-terms" name="search-terms" class="form-control" placeholder="Buscar Amigo" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />				  	
+				  	<input type="text" id="search-terms" name="search-terms" class="form-control" placeholder="Buscar Amigo" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
 				  </form>
 				</div>
 			</div>
-			<?php do_action( 'bp_header' ); ?>			
-		</div>					
+			<?php do_action( 'bp_header' ); ?>
+		</div>
 		<?php do_action( 'bp_after_header'     ); ?>
 
 		<?php do_action( 'bp_before_container' ); ?>
-		<div id="container">
+		<div id="content ">
+			<div class="innerAll"">
