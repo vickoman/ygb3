@@ -652,7 +652,6 @@ Template Name: Home
 		</div>
 
 		<div class="col-md-4 col-lg-3">
-			MARTING ARREAGA
 			<div class="widget">
 				<div class="widget-body text-center">
 					<a href=""><img src="<?php echo bp_core_fetch_avatar(array( 'item_id' => $bp->loggedin_user->id, 'type' => 'full', 'html' => $html, 'alt' => $alt));?>" width="120" alt="" class="img-circle"></a>
