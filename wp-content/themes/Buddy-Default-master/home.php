@@ -26,6 +26,11 @@ Template Name: Home
 				<p class="lead margin-none">What a fun Partyyy</p>
 			</div>
 		</div>
+	<?php if ( is_user_logged_in() ) : ?>
+
+		<?php bp_get_template_part( 'buddypress/activity/index' ); ?>
+
+	<?php endif; ?>		
 	</div>
 </div>
 
