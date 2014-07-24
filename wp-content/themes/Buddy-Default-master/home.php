@@ -2,22 +2,25 @@
 /*
 Template Name: Home
 */
-
+global $bp;
 ?>
 <?php get_header(); ?>	
+<?php echo 'asdads'.$bp->loggedin_user->id; ?>
 <div class="innerAll">
 	<div class="row">
 		<div class="col-lg-9 col-md-8">
-			
 			<div class="timeline-cover">	
 	<div class="cover">
 		<div class="top">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/photodune-2755655-party-time-s.jpg" class="img-responsive">					
 		</div>
 		<ul class="list-unstyled">
-								<?php bp_get_displayed_user_nav(); ?>
-
-						<?php do_action( 'bp_member_options_nav' ); ?></ul>
+			<li class="active"><a href="<?php echo home_url(); ?>/members/"><i class="fa fa-fw fa-clock-o"></i> <span>Mi Actividad</span></a></li>
+	 		<li><a href="about_1.html?lang=en"><i class="fa fa-fw fa-user"></i> <span>About</span></a></li>
+			<li><a href="media_1.html?lang=en"><i class="fa fa-fw icon-photo-camera"></i> <span>Photos</span> <small>(102)</small></a></li>
+			<li><a href="contacts_1.html?lang=en"><i class="fa fa-fw icon-group"></i><span> Friends </span><small>(19)</small></a></li>
+			<li><a href="messages.html?lang=en"><i class="fa fa-fw icon-envelope-fill-1"></i> <span>Messages</span> <small>(2 new)</small></a></li>
+		</ul>
 	</div>
 	<div class="widget">
 		<div class="widget-body padding-none margin-none">

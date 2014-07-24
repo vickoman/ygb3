@@ -23,6 +23,7 @@
 		<?php do_action( 'bp_after_footer' ); ?>
 
 		<?php wp_footer(); ?>
+		
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/bootstrap/js/bootstrap.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/core_nicescroll/jquery.nicescroll.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/core_breakpoints/breakpoints.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>

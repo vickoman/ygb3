@@ -39,15 +39,17 @@
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/core_browser/ie/ie.prototype.polyfill.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<?php bp_head(); ?>
 		<?php wp_head(); ?>		
-		<?php global $bp; ?>
-
+		<?php global $bp; 
+		global $current_user;
+        get_currentuserinfo();
+		?>
 	</head>
 
-	<body id="">
+	<body id="bp-default">
 		<?php do_action( 'bp_before_header' ); ?>
-		
+
 		<!-- Navbar -->
-		
+		<div>
 			<div class="navbar hidden-print navbar-default box main" role="navigation">
 				<div class="user-action  pull-right">
 					<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><?php bp_site_name(); ?></a>
@@ -115,9 +117,8 @@
 							</span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="about_1.html?lang=en" >About </a></li>
-							<li><a href="messages.html?lang=en">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
-							<li><a href="timeline_3.html?lang=en">Profile</a></li>
+							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/profile" >Mi peril </a></li>
+							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/messages">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
 							<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>">Salir</a></li>
 					    </ul>
 					</div>
