@@ -919,7 +919,7 @@ dd.wp-caption p.wp-caption-text,
 --------------------------------------------------------------*/
 img.avatar {
 	border: 2px solid #eee;
-	float: left;
+	float: center;
 }
 img.wp-smiley {
 	border: none !important;
@@ -1031,6 +1031,9 @@ p.date span:first-child {
 }
 div.post .entry {
 	margin-bottom: 15px;
+}
+.entry{
+	background-color: white;
 }
 p.date,
 p.postmetadata {

@@ -12,11 +12,10 @@
 			<div class="widget">
 				<div class="widget-body text-center">
 					<a href="<?php echo bp_loggedin_user_domain(); ?>">
-									<?php bp_loggedin_user_avatar( 'type=full&width=130&height=130' ); ?>
+									<?php bp_loggedin_user_avatar( 'type=full&width=130&height=130&class=img-circle' ); ?>
 					</a>
 					<h2 class="strong margin-none"><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h2>
 					<div class="innerB">Working at MOSAICPRO</div>
-					<a href="" class="btn btn-primary text-center btn-block">PRO Account</a>
 					<div class="btn-group-vertical btn-block">
 						<a href="/members/<?php bp_displayed_user_mentionname(); ?>/profile/edit/group/1/" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Edit Account</a>
 						<a href="<?php echo wp_logout_url( wp_guess_url() ); ?>" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Logout</a>

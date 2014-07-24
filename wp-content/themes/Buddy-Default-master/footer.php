@@ -1,5 +1,5 @@
 		</div> <!-- #container -->
-
+</div>
 
 		<?php do_action( 'bp_after_container' ); ?>
 		<?php do_action( 'bp_before_footer'   ); ?>
@@ -13,7 +13,7 @@
 
 			<div id="site-generator" role="contentinfo">
 				<?php do_action( 'bp_dtheme_credits' ); ?>
-				
+
 			</div>
 
 			<?php do_action( 'bp_footer' ); ?>
@@ -23,7 +23,7 @@
 		<?php do_action( 'bp_after_footer' ); ?>
 
 		<?php wp_footer(); ?>
-		
+
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/bootstrap/js/bootstrap.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/core_nicescroll/jquery.nicescroll.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/core_breakpoints/breakpoints.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
@@ -42,7 +42,7 @@
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/components/menus/menus.sidebar.chat.init.js?v=v2.0.0-rc8"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/other_mixitup/jquery.mixitup.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/plugins/other_mixitup/mixitup.init.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
-		<script src="<?php echo get_stylesheet_directory_uri(); ?>/components/core/core.init.js?v=v2.0.0-rc8"></script>			
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/components/core/core.init.js?v=v2.0.0-rc8"></script>
 	</body>
 
 </html>

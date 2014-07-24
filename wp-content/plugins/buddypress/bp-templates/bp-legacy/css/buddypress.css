@@ -1099,6 +1099,7 @@ a.bp-title-button {
 #buddypress div#item-header div#item-header-content {
 	float: left;
 	margin-left: 0;
+	margin-top: 5px;
 }
 #buddypress div#item-header h2 {
 	line-height: 120%;
@@ -1317,10 +1318,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	list-style: none;
 }
 
-#buddypress #item-header-avatar{
-	position: absolute;
-	top:0px;
-}
+
 /*--------------------------------------------------------------
 3.9 - Private Messaging Threads
 --------------------------------------------------------------*/
