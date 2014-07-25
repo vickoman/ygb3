@@ -16,9 +16,7 @@
 
 
 									<a class="button confirm btn btn-default bg-white btn-sm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
-								<a  href="#type" class=" btn btn-default bg-white btn-sm" data-toggle="collapse">
-									<i class="fa fa-pencil"></i> Write
-								</a>
+
 								</div>
 								<h4 href="" class="text-white pull-left innerAll strong display-block margin-none">
 								Asunto: <?php bp_the_thread_subject(); ?>
@@ -42,16 +40,6 @@
 
 						</div>
 					</div>
-
-					<div  id="type" class="collapse border-top">
-
-						<textarea type="text" class="form-control rounded-none border-none" placeholder="Write your messages..."></textarea>
-					</div>
-
-
-
-
-
 
 
 		<?php do_action( 'bp_before_message_thread_list' ); ?>
