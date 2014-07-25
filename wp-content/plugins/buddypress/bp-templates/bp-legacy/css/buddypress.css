@@ -960,6 +960,10 @@ a.bp-title-button {
 	font-weight: bold;
 	width: 25%;
 }
+.tittle-Msj{
+	font-size: 50px;
+	text-align: center;
+}
 #buddypress table tr td.thread-info p {
 	margin: 0;
 }
