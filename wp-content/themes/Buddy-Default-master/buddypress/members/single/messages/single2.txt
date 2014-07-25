@@ -58,6 +58,7 @@
 
 		<?php while ( bp_thread_messages() ) : bp_thread_the_message(); ?>
 
+
 			<div class="message-box <?php bp_the_thread_message_alt_class(); ?>">
 
 				<div class="message-metadata">
@@ -66,33 +67,47 @@
 
 					<?php bp_the_thread_message_sender_avatar( 'type=thumb&width=30&height=30' ); ?>
 
-					<?php if ( bp_get_the_thread_message_sender_link() ) : ?>
 
-						<strong><a href="<?php bp_the_thread_message_sender_link(); ?>" title="<?php bp_the_thread_message_sender_name(); ?>"><?php bp_the_thread_message_sender_name(); ?></a></strong>
+						<div class="media-body innerTB">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="innerT half">
+											<div class="media">
+												<div class="pull-left">
+													<?php if ( bp_get_the_thread_message_sender_link() ) : ?>
 
-					<?php else : ?>
+													<strong><a href="<?php bp_the_thread_message_sender_link(); ?>" title="<?php bp_the_thread_message_sender_name(); ?>"><?php bp_the_thread_message_sender_name(); ?></a></strong>
 
-						<strong><?php bp_the_thread_message_sender_name(); ?></strong>
+													<?php else : ?>
 
-					<?php endif; ?>
+													<strong><?php bp_the_thread_message_sender_name(); ?></strong>
 
-					<span class="activity"><?php bp_the_thread_message_time_since(); ?></span>
+													<?php endif; ?>
+													<span class="innerR text-muted visible-xs"><?php bp_the_thread_message_time_since(); ?> </span>
+												<?php do_action( 'bp_after_message_meta' ); ?>
+												</div>
+												<?php do_action( 'bp_before_message_content' ); ?>
+												<div class="media-body">
+												<?php bp_the_thread_message_content(); ?>
+												</div><!-- .message-content -->
+												<?php do_action( 'bp_after_message_content' ); ?>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 hidden-xs">
+										<i class="icon-time-clock pull-right text-muted innerT half fa fa-2x"></i>
+										<span class="pull-right innerR innerT text-right  text-muted">
+										<?php bp_the_thread_message_time_since(); ?>
+										</span>
+									</div>
+								</div>
+							</div>
 
-					<?php do_action( 'bp_after_message_meta' ); ?>
+
 
 				</div><!-- .message-metadata -->
 
-				<?php do_action( 'bp_before_message_content' ); ?>
 
-				<div class="message-content">
-
-					<?php bp_the_thread_message_content(); ?>
-
-				</div><!-- .message-content -->
-
-				<?php do_action( 'bp_after_message_content' ); ?>
-
-				<div class="clear"></div>
 
 			</div><!-- .message-box -->
 

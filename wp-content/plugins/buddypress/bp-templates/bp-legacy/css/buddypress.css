@@ -947,6 +947,9 @@ a.bp-title-button {
 	padding: 8px;
 	vertical-align: middle;
 }
+#buddypress table.messages-notices tr td{
+	padding: 4px;
+}
 #buddypress table.notifications tr td.label,
 #buddypress table.notifications-settings tr td.label,
 #buddypress table.profile-fields tr td.label,
