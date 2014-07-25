@@ -1,9 +1,17 @@
+ <?php
+ /** 
+ * 3rd-party plugins should use this template to easily add template
+ * support to their plugins for the members component.
+ *
+ * @package BuddyPress
+ * @subpackage bp-legacy
+ */
+?>
 <?php do_action( 'bp_before_directory_activity' ); ?>
 
 <div id="buddypress">
 	
-	<!-- modificado por Victor foto portada-->
-			<?php do_action( 'bp_before_member_plugin_template' ); ?>
+	<!-- modificado por Victor foto portada-->			
 			<div class="timeline-cover">
 				<div class="cover">
 					<div class="top">
@@ -11,14 +19,11 @@
 					</div>
 					<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
 						<ul class="list-unstyled">
-							<?php bp_get_options_nav(); ?>
-							<?php do_action( 'bp_member_plugin_options_nav' ); ?>
+							<?php bp_get_displayed_user_nav(); ?>						
 						</ul>
 					</div>
 				</div>
-			</div>
-			<?php do_action( 'bp_template_content' ); ?>
-			<?php do_action( 'bp_after_member_plugin_template' ); ?>
+			</div>			
 
 <!-- fin modificado por Victor foto portada-->
 
