@@ -16,11 +16,7 @@
 
 	</ul>
 
-	<?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
 
-		<div class="message-search"><?php bp_message_search_form(); ?></div>
-
-	<?php endif; ?>
 
 </div><!-- .item-list-tabs -->
 
@@ -36,10 +32,12 @@
 					<div class="innerAll">
 						<form autocomplete="off" class="form-inline margin-none">
 							<div class="input-group input-group-sm">
-								<input type="text" class="form-control" placeholder="Find messages .." />
-								<span class="input-group-btn">
-									<button type="button" class="btn btn-primary btn-xs pull-right"><i class="fa fa-search"></i></button>
-								</span>
+									<?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
+
+		<div class="message-search"><?php bp_message_search_form(); ?></div>
+
+	<?php endif; ?>
+
 							</div>
 						</form>
 					</div>
@@ -47,14 +45,20 @@
 
 
 		<?php do_action( 'bp_before_member_messages_content' ); ?>
-					<ul class="list-unstyled">
+					<div class="list-unstyled messages" role="main">
 
-			<?php bp_get_template_part( 'members/single/messages/messages-loop' ); ?>
+		<?php
+			if ( bp_is_current_action( 'notices' ) )
+				locate_template( array( 'members/single/messages/notices-loop.php' ), true );
+			else
+				locate_template( array( 'members/single/messages/messages-loop.php' ), true );
+
+		?>
+		<?php bp_get_template_part( 'members/single/messages/messages-loop' ); ?>
 <!-- .messages -->
 
+					</div>
 		<?php do_action( 'bp_after_member_messages_content' ); ?>
-
-					</ul>
 				</div>
 				<div class="col-md-8 detailsWrapper">
 
@@ -93,7 +97,7 @@ switch ( bp_current_action() ) :
 	// Any other
 	default :
 		echo "<h1 class='tittle-Msj'><span>Escoja un mensaje</span></h1>";
-		//bp_get_template_part( 'members/single/plugins' );
+		bp_get_template_part( 'members/single/plugins' );
 		break;
 endswitch;
 ?>
