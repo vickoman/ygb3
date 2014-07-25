@@ -1159,7 +1159,7 @@ a.bp-title-button {
 #buddypress div#item-header ul h5,
 #buddypress div#item-header ul span,
 #buddypress div#item-header ul hr {
-	display: none;
+	/*display: none;*/
 }
 #buddypress div#item-header ul li {
 	float: left;

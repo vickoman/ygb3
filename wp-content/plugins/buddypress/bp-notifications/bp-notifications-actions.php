@@ -40,9 +40,9 @@ function bp_notifications_action_mark_read() {
 
 	// Check the nonce and mark the notification
 	if ( bp_verify_nonce_request( 'bp_notification_mark_read_' . $id ) && bp_notifications_mark_notification( $id, false ) ) {
-		bp_core_add_message( __( 'Notification successfully marked read.',         'buddypress' )          );
+		bp_core_add_message( __( 'Notificación correctamente marcada como leída.',         'buddypress' )          );
 	} else {
-		bp_core_add_message( __( 'There was a problem marking that notification.', 'buddypress' ), 'error' );
+		bp_core_add_message( __( 'Existe un problema marcando la notificación.', 'buddypress' ), 'error' );
 	}
 
 	// Redirect
@@ -76,9 +76,9 @@ function bp_notifications_action_mark_unread() {
 
 	// Check the nonce and mark the notification
 	if ( bp_verify_nonce_request( 'bp_notification_mark_unread_' . $id ) && bp_notifications_mark_notification( $id, true ) ) {
-		bp_core_add_message( __( 'Notification successfully marked unread.',       'buddypress' )          );
+		bp_core_add_message( __( 'Notificación correctamente marcada como no leída.',       'buddypress' )          );
 	} else {
-		bp_core_add_message( __( 'There was a problem marking that notification.', 'buddypress' ), 'error' );
+		bp_core_add_message( __( 'Existe un problema marcando esta notificación.', 'buddypress' ), 'error' );
 	}
 
 	// Redirect
@@ -112,9 +112,9 @@ function bp_notifications_action_delete() {
 
 	// Check the nonce and delete the notification
 	if ( bp_verify_nonce_request( 'bp_notification_delete_' . $id ) && bp_notifications_delete_notification( $id ) ) {
-		bp_core_add_message( __( 'Notification successfully deleted.',              'buddypress' )          );
+		bp_core_add_message( __( 'Notificación correctamente borrada.',              'buddypress' )          );
 	} else {
-		bp_core_add_message( __( 'There was a problem deleting that notification.', 'buddypress' ), 'error' );
+		bp_core_add_message( __( 'Existe un problema borrando la notificación.', 'buddypress' ), 'error' );
 	}
 
 	// Redirect

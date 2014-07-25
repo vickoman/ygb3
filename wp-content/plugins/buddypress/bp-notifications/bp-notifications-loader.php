@@ -108,9 +108,9 @@ class BP_Notifications_Component extends BP_Component {
 		if ( bp_is_user() && bp_user_has_access() ) {
 			$count    = bp_notifications_get_unread_notification_count( bp_displayed_user_id() );
 			$class    = ( 0 === $count ) ? 'no-count' : 'count';
-			$nav_name = sprintf( __( 'Notifications <span class="%s">%s</span>', 'buddypress' ), esc_attr( $class ), number_format_i18n( $count ) );
+			$nav_name = sprintf( __( 'Notificaciones <span class="%s">%s</span>', 'buddypress' ), esc_attr( $class ), number_format_i18n( $count ) );
 		} else {
-			$nav_name = __( 'Notifications', 'buddypress' );
+			$nav_name = __( 'Notificaciones', 'buddypress' );
 		}
 
 		// Add 'Notifications' to the main navigation
@@ -148,7 +148,7 @@ class BP_Notifications_Component extends BP_Component {
 		);
 
 		$sub_nav[] = array(
-			'name'            => __( 'Read',   'buddypress' ),
+			'name'            => __( 'Leído',   'buddypress' ),
 			'slug'            => 'read',
 			'parent_url'      => $notifications_link,
 			'parent_slug'     => bp_get_notifications_slug(),

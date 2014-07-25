@@ -730,7 +730,7 @@ function bp_the_notification_mark_read_link() {
 		// Start the output buffer
 		ob_start(); ?>
 
-		<a href="<?php echo esc_url( $url ); ?>" class="mark-read primary"><?php _e( 'Read', 'buddypress' ); ?></a>
+		<a href="<?php echo esc_url( $url ); ?>" class="mark-read primary"><?php _e( 'Leído', 'buddypress' ); ?></a>
 
 		<?php $retval = ob_get_clean();
 
@@ -760,7 +760,7 @@ function bp_the_notification_mark_unread_link() {
 		// Start the output buffer
 		ob_start(); ?>
 
-		<a href="<?php echo esc_url( $url ); ?>" class="mark-unread primary"><?php _e( 'Unread', 'buddypress' ); ?></a>
+		<a href="<?php echo esc_url( $url ); ?>" class="mark-unread primary"><?php _e( 'No Leído', 'buddypress' ); ?></a>
 
 		<?php $retval = ob_get_clean();
 
@@ -892,7 +892,7 @@ function bp_notifications_pagination_count() {
 		$from_num   = bp_core_number_format( $start_num );
 		$to_num     = bp_core_number_format( ( $start_num + ( $query_loop->pag_num - 1 ) > $query_loop->total_notification_count ) ? $query_loop->total_notification_count : $start_num + ( $query_loop->pag_num - 1 ) );
 		$total      = bp_core_number_format( $query_loop->total_notification_count );
-		$pag        = sprintf( _n( 'Viewing %1$s to %2$s (of %3$s notification)', 'Viewing %1$s to %2$s (of %3$s notifications)', $total, 'buddypress' ), $from_num, $to_num, $total );
+		$pag        = sprintf( _n( 'Viendo %1$s - %2$s (de %3$s notificación)', 'Viendo %1$s - %2$s (de %3$s notificaciones)', $total, 'buddypress' ), $from_num, $to_num, $total );
 
 		return apply_filters( 'bp_notifications_pagination_count', $pag );
 	}
