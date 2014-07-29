@@ -15,7 +15,7 @@
 			<div class="timeline-cover">
 	<div class="cover">
 		<div class="top">
-			<img src="<?php echo bloginfo('template_directory'); ?>/images/photodune-2755655-party-time-s.jpg" class="img-responsive" />
+			<img src="<?php echo bloginfo('template_directory'); ?>/images/photodune-2755655-party-time-s.png" class="img-responsive" />
 		</div>
 		<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
 					<ul class="list-unstyled">

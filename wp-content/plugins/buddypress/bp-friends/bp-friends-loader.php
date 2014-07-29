@@ -183,9 +183,9 @@ class BP_Friends_Component extends BP_Component {
 			$count = count( friends_get_friendship_request_user_ids( bp_loggedin_user_id() ) );
 			if ( !empty( $count ) ) {
 				$title   = sprintf( __( 'Amigos <span class="count">%s</span>',          'buddypress' ), number_format_i18n( $count ) );
-				$pending = sprintf( __( 'Pending Requests <span class="count">%s</span>', 'buddypress' ), number_format_i18n( $count ) );
+				$pending = sprintf( __( 'Peticiones pendientes <span class="count">%s</span>', 'buddypress' ), number_format_i18n( $count ) );
 			} else {
-				$title   = __( 'Friends',             'buddypress' );
+				$title   = __( 'Amigos',             'buddypress' );
 				$pending = __( 'No Pending Requests', 'buddypress' );
 			}
 
