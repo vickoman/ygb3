@@ -1,0 +1,1 @@
+QØS<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":5:{s:2:"id";s:1:"1";s:7:"user_id";s:1:"1";s:8:"field_id";s:1:"1";s:5:"value";s:14:"@administrador";s:12:"last_updated";s:19:"2014-07-18 06:06:18";}}

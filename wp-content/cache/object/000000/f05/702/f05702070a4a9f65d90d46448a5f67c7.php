@@ -1,0 +1,1 @@
+&ØS<?php exit; ?>a:1:{s:7:"content";O:18:"BP_Messages_Notice":5:{s:2:"id";N;s:7:"subject";N;s:7:"message";N;s:9:"date_sent";N;s:9:"is_active";N;}}
