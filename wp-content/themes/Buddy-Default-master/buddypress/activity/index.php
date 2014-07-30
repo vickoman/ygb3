@@ -25,28 +25,25 @@
 						</li>
 
 						<li id="activity-personal-li">
-							<a id="user-activity" href="<?php bloginfo('url'); ?>/members/nitromax30/activity/">Actividad</a>
+							<a id="user-activity" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/activity/">Actividad</a>
 						</li>
 						<li id="xprofile-personal-li" class="current selected">
-							<a id="user-xprofile" href="<?php bloginfo('url'); ?>/members/nitromax30/profile/">Perfil</a>
+							<a id="user-xprofile" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/profile/">Perfil</a>
 						</li>
 						<li id="notifications-personal-li">
-							<a id="user-notifications" href="<?php bloginfo('url'); ?>/members/nitromax30/notifications/">Notificaciones <span class="no-count">0</span></a>
+							<a id="user-notifications" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/notifications/">Notificaciones <span class="no-count">0</span></a>
 						</li>
 						<li id="messages-personal-li">
-							<a id="user-messages" href="<?php bloginfo('url'); ?>/members/nitromax30/messages/">Mensajes <span class="no-count">0</span>
+							<a id="user-messages" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/messages/">Mensajes <span class="no-count">0</span>
 							</a>
 						</li>
 						<li id="friends-personal-li">
-							<a id="user-friends" href="<?php bloginfo('url'); ?>/members/nitromax30/friends/">Amigos <span class="no-count">0</span>
+							<a id="user-friends" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/friends/">Amigos <span class="no-count">0</span>
 							</a>
 						</li>
 						<li id="groups-personal-li">
-							<a id="user-groups" href="<?php bloginfo('url'); ?>/members/nitromax30/groups/">Grupos <span class="count">0</span>
+							<a id="user-groups" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/groups/">Grupos <span class="count">0</span>
 							</a>
-						</li>
-						<li id="settings-personal-li">
-							<a id="user-settings" href="<?php bloginfo('url'); ?>/members/nitromax30/settings/">Configuración</a>
 						</li>
 						
 					</ul>
