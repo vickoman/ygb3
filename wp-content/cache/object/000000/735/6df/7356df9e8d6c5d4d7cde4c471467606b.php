@@ -1,1 +1,0 @@
-&ØS<?php exit; ?>a:1:{s:7:"content";a:1:{i:5;a:3:{s:7:"user_id";s:1:"5";s:13:"date_recorded";s:19:"2014-07-30 07:23:30";s:11:"activity_id";s:2:"10";}}}
