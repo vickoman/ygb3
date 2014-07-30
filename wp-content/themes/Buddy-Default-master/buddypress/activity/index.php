@@ -51,8 +51,7 @@
 						</li>
 						<?php $count_media  = get_rtmedia_like(); ?>						
 						<li id="media-personal-li">
-							<a id="user-media" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/media/">Multimedia<span><?php echo $count_media; ?></span>
-							</a>
+							<a id="user-media" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/media/">Multimedia</a>
 						</li>
 					</ul>
 					</div>

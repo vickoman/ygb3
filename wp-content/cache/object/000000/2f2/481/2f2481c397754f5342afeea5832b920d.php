@@ -1,1 +1,0 @@
-&žØS<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":8:{s:2:"id";s:1:"2";s:10:"creator_id";s:1:"1";s:4:"name";s:3:"PHP";s:4:"slug";s:3:"php";s:11:"description";s:13:"Programadores";s:6:"status";s:6:"public";s:12:"enable_forum";s:1:"0";s:12:"date_created";s:19:"2014-07-22 04:49:35";}}
