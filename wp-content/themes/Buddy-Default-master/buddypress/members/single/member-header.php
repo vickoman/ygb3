@@ -10,7 +10,7 @@
 ?>
 
 <?php do_action( 'bp_before_member_header' ); ?>
-<!-- modificado por Martin foto portada-->
+<!-- modificado por Nitro foto portada-->
 
 			<div class="timeline-cover">
 	<div class="cover">
@@ -19,7 +19,9 @@
 		</div>
 		<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
 					<ul class="list-unstyled">
-
+						<li id="home-li">
+							<a id="user-activity" href="<?php bloginfo('url'); ?>">Inicio</a>
+						</li>
 						<?php bp_get_displayed_user_nav(); ?>
 
 						<?php do_action( 'bp_member_options_nav' ); ?>
@@ -31,7 +33,7 @@
 
 </div>
 
-<!-- fin modificado por Martin foto portada-->
+<!-- fin modificado por Nitro foto portada-->
 <div id="item-header-avatar">
 	<a href="<?php bp_displayed_user_link(); ?>">
 

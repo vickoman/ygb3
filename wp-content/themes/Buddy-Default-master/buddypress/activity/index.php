@@ -19,9 +19,37 @@
 						<img src="<?php echo bloginfo('template_directory'); ?>/images/photodune-2755655-party-time-s.png" class="img-responsive" />
 					</div>
 					<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
-						<ul class="list-unstyled">
-							<?php bp_get_displayed_user_nav(); ?>						
-						</ul>
+<ul class="list-unstyled">
+						<li id="home-li">
+							<a id="user-activity" href="<?php bloginfo('url'); ?>">Inicio</a>
+						</li>
+
+						<li id="activity-personal-li">
+							<a id="user-activity" href="<?php bloginfo('url'); ?>/members/nitromax30/activity/">Actividad</a>
+						</li>
+						<li id="xprofile-personal-li" class="current selected">
+							<a id="user-xprofile" href="<?php bloginfo('url'); ?>/members/nitromax30/profile/">Perfil</a>
+						</li>
+						<li id="notifications-personal-li">
+							<a id="user-notifications" href="<?php bloginfo('url'); ?>/members/nitromax30/notifications/">Notificaciones <span class="no-count">0</span></a>
+						</li>
+						<li id="messages-personal-li">
+							<a id="user-messages" href="<?php bloginfo('url'); ?>/members/nitromax30/messages/">Mensajes <span class="no-count">0</span>
+							</a>
+						</li>
+						<li id="friends-personal-li">
+							<a id="user-friends" href="<?php bloginfo('url'); ?>/members/nitromax30/friends/">Amigos <span class="no-count">0</span>
+							</a>
+						</li>
+						<li id="groups-personal-li">
+							<a id="user-groups" href="<?php bloginfo('url'); ?>/members/nitromax30/groups/">Grupos <span class="count">0</span>
+							</a>
+						</li>
+						<li id="settings-personal-li">
+							<a id="user-settings" href="<?php bloginfo('url'); ?>/members/nitromax30/settings/">Configuración</a>
+						</li>
+						
+					</ul>
 					</div>
 				</div>
 			</div>			
