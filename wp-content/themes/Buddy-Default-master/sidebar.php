@@ -17,7 +17,7 @@
 					<h2 class="strong margin-none"><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h2>
 					<div class="innerB">Working at MOSAICPRO</div>
 					<div class="btn-group-vertical btn-block">
-						<a href="/members/<?php bp_displayed_user_mentionname(); ?>/profile/edit/group/1/" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Editar Cuenta</a>
+						<a href="<?php bloginfo('url'); ?>/members/<?php bp_displayed_user_mentionname(); ?>/profile/edit/group/1/" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Editar Cuenta</a>
 						<a href="<?php echo wp_logout_url( wp_guess_url() ); ?>" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Salir</a>
 					</div>
 				</div>
