@@ -71,6 +71,9 @@ Hello, this is the BuddyPress Legacy stylesheet.
 #buddypress .paged #nav-above {
 	display: block;
 }
+#settings-personal-li{
+	display: none;
+}
 /*--------------------------------------------------------------
 2 - WordPress
 --------------------------------------------------------------*/

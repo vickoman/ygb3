@@ -119,6 +119,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/profile" >Mi peril </a></li>
 							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/messages">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
+						 	<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/settings">Configuración</a></li>
 							<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>">Salir</a></li>
 					    </ul>
 					</div>
