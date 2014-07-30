@@ -27,22 +27,26 @@
 						<li id="activity-personal-li">
 							<a id="user-activity" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/activity/">Actividad</a>
 						</li>
-						<li id="xprofile-personal-li" class="current selected">
+						<li id="xprofile-personal-li">
 							<a id="user-xprofile" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/profile/">Perfil</a>
 						</li>
+						<?php $count_notification = bp_notifications_get_unread_notification_count( bp_displayed_user_id() ); ?>
 						<li id="notifications-personal-li">
-							<a id="user-notifications" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/notifications/">Notificaciones <span class="no-count">0</span></a>
+							<a id="user-notifications" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/notifications/">Notificaciones <span class="no-count"><?php echo $count_notification; ?></span></a>
 						</li>
+						<?php $count_message = bp_get_total_unread_messages_count(); ?>
 						<li id="messages-personal-li">
-							<a id="user-messages" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/messages/">Mensajes <span class="no-count">0</span>
+							<a id="user-messages" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/messages/">Mensajes <span class="no-count"><?php echo $count_message; ?></span>
 							</a>
 						</li>
+						<?php $count_friends =  friends_get_total_friend_count(); ?>
 						<li id="friends-personal-li">
-							<a id="user-friends" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/friends/">Amigos <span class="no-count">0</span>
+							<a id="user-friends" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/friends/">Amigos <span class="no-count"><?php echo $count_friends; ?></span>
 							</a>
 						</li>
+						<?php $count_groups  = bp_get_total_group_count_for_user(); ?>			
 						<li id="groups-personal-li">
-							<a id="user-groups" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/groups/">Grupos <span class="count">0</span>
+							<a id="user-groups" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/groups/">Grupos <span class="count"><?php echo $count_groups; ?></span>
 							</a>
 						</li>
 						
