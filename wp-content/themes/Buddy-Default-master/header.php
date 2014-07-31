@@ -10,6 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
+		<link rel="icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon-1.ico" />
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<!--
@@ -46,6 +47,32 @@
 	</head>
 
 	<body id="bp-default" style="padding-top:60px;">
+		<!-- Habilitar Opciones de Facebook -->
+		<script>
+	      window.fbAsyncInit = function() {
+	        FB.init({
+	          appId      : '{629981593782787}',
+	          xfbml      : true,
+	          version    : 'v2.0'
+	        });
+	      };
+	      (function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=629981593782787&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+	      FB.ui({
+			  method: 'share_open_graph',
+			  action_type: 'og.likes',
+			  action_properties: JSON.stringify({
+			      object:'https://developers.facebook.com/docs/',
+			  })
+			}, function(response){});
+	    </script>
+	    <div id="fb-root"></div>
+		
 		<?php do_action( 'bp_before_header' ); ?>
 
 		<!-- Navbar -->
