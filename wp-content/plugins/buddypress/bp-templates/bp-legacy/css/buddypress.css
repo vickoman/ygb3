@@ -1283,7 +1283,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #buddypress div.item-list-tabs ul li a,
 #buddypress div.item-list-tabs ul li span {
 	display: block;
-	padding: 2px 3px;
+	padding: 2px 8px;
 	text-decoration: none;
 }
 #buddypress div.item-list-tabs ul li a span {

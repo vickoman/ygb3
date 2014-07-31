@@ -22,7 +22,7 @@
 
 			<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/components/library/bootstrap/css/bootstrap.min.css" /><![endif]-->
 
-			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
+			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.layout_fixed.true.min.css" />
 
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +30,7 @@
 	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	    <![endif]-->
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.layout_fixed.true.min.css" />
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/jquery/jquery.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/jquery/jquery-migrate.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/modernizr/modernizr.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
@@ -137,4 +137,5 @@
 
 		<?php do_action( 'bp_before_container' ); ?>
 		<div id="content ">
+			<div class="container">
 			<div class="innerAll"">
