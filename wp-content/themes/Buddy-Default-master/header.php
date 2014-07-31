@@ -10,6 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
+		<link rel="icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon-1.ico" />
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<!--
@@ -22,7 +23,7 @@
 
 			<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/components/library/bootstrap/css/bootstrap.min.css" /><![endif]-->
 
-			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
+			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.layout_fixed.true.min.css" />
 
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +31,7 @@
 	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	    <![endif]-->
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.layout_fixed.true.min.css" />
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/jquery/jquery.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/jquery/jquery-migrate.min.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/library/modernizr/modernizr.js?v=v2.0.0-rc8&sv=v0.0.1.2"></script>
@@ -45,12 +46,38 @@
 		?>
 	</head>
 
-	<body id="bp-default">
+	<body id="bp-default" style="padding-top:60px;">
+		<!-- Habilitar Opciones de Facebook -->
+		<script>
+	      window.fbAsyncInit = function() {
+	        FB.init({
+	          appId      : '{629981593782787}',
+	          xfbml      : true,
+	          version    : 'v2.0'
+	        });
+	      };
+	      (function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=629981593782787&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+	      FB.ui({
+			  method: 'share_open_graph',
+			  action_type: 'og.likes',
+			  action_properties: JSON.stringify({
+			      object:'https://developers.facebook.com/docs/',
+			  })
+			}, function(response){});
+	    </script>
+	    <div id="fb-root"></div>
+		
 		<?php do_action( 'bp_before_header' ); ?>
 
 		<!-- Navbar -->
 		<div>
-			<div class="navbar hidden-print navbar-default box main" role="navigation">
+			<div class="navbar hidden-print navbar-default navbar-fixed-top box main" role="navigation">
 				<div class="user-action  pull-right">
 					<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><?php bp_site_name(); ?></a>
 				</div>
@@ -119,6 +146,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/profile" >Mi peril </a></li>
 							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/messages">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
+						 	<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/settings">Configuración</a></li>
 							<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>">Salir</a></li>
 					    </ul>
 					</div>
@@ -136,4 +164,5 @@
 
 		<?php do_action( 'bp_before_container' ); ?>
 		<div id="content ">
+			<div class="container">
 			<div class="innerAll"">

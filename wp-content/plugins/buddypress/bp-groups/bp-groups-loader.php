@@ -360,9 +360,9 @@ class BP_Groups_Component extends BP_Component {
 		if ( bp_is_user() ) {
 			$count    = bp_get_total_group_count_for_user();
 			$class    = ( 0 === $count ) ? 'no-count' : 'count';
-			$nav_name = sprintf( __( 'Groups <span class="%s">%s</span>', 'buddypress' ), esc_attr( $class ), number_format_i18n( $count ) );
+			$nav_name = sprintf( __( 'Grupos <span class="%s">%s</span>', 'buddypress' ), esc_attr( $class ), number_format_i18n( $count ) );
 		} else {
-			$nav_name = __( 'Groups', 'buddypress' );
+			$nav_name = __( 'Grupos', 'buddypress' );
 		}
 
 		// Add 'Groups' to the main navigation
@@ -389,7 +389,7 @@ class BP_Groups_Component extends BP_Component {
 
 			// Add the My Groups nav item
 			$sub_nav[] = array(
-				'name'            => __( 'Memberships', 'buddypress' ),
+				'name'            => __( 'Membresía', 'buddypress' ),
 				'slug'            => 'my-groups',
 				'parent_url'      => $groups_link,
 				'parent_slug'     => $this->slug,

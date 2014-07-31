@@ -35,26 +35,27 @@
 
 	<ul id="members-list" class="item-list" role="main">
 
+<div class="row row-merge">
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 
-		<li>
-			<div class="item-avatar">
-				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
-			</div>
+		<div class="col-md-12 col-lg-6 bg-white border-bottom">
+		<div class="row">
 
-			<div class="item">
-				<div class="item-title">
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
-
-					<?php if ( bp_get_member_latest_update() ) : ?>
-
+			<div class="col-sm-8">
+				<div class="media">
+					<a class="pull-left margin-none" href="<?php bp_member_permalink(); ?>">
+					<?php bp_member_avatar('type=full&width=105&height=105'); ?>
+					</a>
+					<div class="media-body innerAll inner-2x padding-right-none padding-bottom-none">
+						 <h4 class="media-heading"><a href="<?php bp_member_permalink(); ?>" class="text-inverse"><?php bp_member_name(); ?></a></h4>
+						 <p>
+						 	<!-- <span class="text-success strong"><i class="fa fa-check"></i> Friend</span> &nbsp;  -->
+						 	<i class="fa fa-fw fa-map-marker text-muted"></i> <?php bp_member_last_active(); ?></p>
+						 	<?php if ( bp_get_member_latest_update() ) : ?>
+<!-- ultima actualizacion escondida
 						<span class="update"> <?php bp_member_latest_update(); ?></span>
-
+-->
 					<?php endif; ?>
-
-				</div>
-
-				<div class="item-meta"><span class="activity"><?php bp_member_last_active(); ?></span></div>
 
 				<?php do_action( 'bp_directory_members_item' ); ?>
 
@@ -67,19 +68,29 @@
 				  * bp_member_profile_data( 'field=the field name' );
 				  */
 				?>
+					</div>
+				</div>
 			</div>
+			<div class="col-sm-4">
+				<div class="innerAll text-right">
+					<!-- botones del tema escondidos
+					<div class="btn-group-vertical btn-group-sm">
+						<a href="" class="btn btn-primary"><i class="fa fa-fw fa-thumbs-up"></i> Like</a>
+						<a href="" class="btn btn-default" data-toggle="sidr-open" data-menu="menu-right"><i class="fa fa-fw fa-envelope-o"></i> Chat</a>
 
-			<div class="action">
-
-				<?php do_action( 'bp_directory_members_actions' ); ?>
-
+					</div>-->
+					<div class="action">
+						<?php do_action( 'bp_directory_members_actions' ); ?>
+						</div>
+				</div>
 			</div>
+		</div>
 
-			<div class="clear"></div>
-		</li>
+	</div>
+
 
 	<?php endwhile; ?>
-
+</div>
 	</ul>
 
 	<?php do_action( 'bp_after_directory_members_list' ); ?>

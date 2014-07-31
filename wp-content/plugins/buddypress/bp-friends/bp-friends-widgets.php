@@ -63,7 +63,7 @@ class BP_Core_Friends_Widget extends WP_Widget {
 
 		$user_id = bp_displayed_user_id();
 		$link = trailingslashit( bp_displayed_user_domain() . bp_get_friends_slug() );
-		$instance['title'] = sprintf( __( '%s&#8217;s Friends', 'buddypress' ), bp_get_displayed_user_fullname() );
+		$instance['title'] = sprintf( __( 'Amigos de %s', 'buddypress' ), bp_get_displayed_user_fullname() );
 
 		if ( empty( $instance['friend_default'] ) ) {
 			$instance['friend_default'] = 'active';
@@ -87,11 +87,11 @@ class BP_Core_Friends_Widget extends WP_Widget {
 		?>
 
 		<?php if ( bp_has_members( $members_args ) ) : ?>
-			<div class="item-options" id="friends-list-options">
+			<!-- <div class="item-options" id="friends-list-options">
 				<a href="<?php bp_members_directory_permalink(); ?>" id="newest-friends" <?php if ( $instance['friend_default'] == 'newest' ) : ?>class="selected"<?php endif; ?>><?php _e( 'Newest', 'buddypress' ) ?></a>
 				| <a href="<?php bp_members_directory_permalink(); ?>" id="recently-active-friends" <?php if ( $instance['friend_default'] == 'active' ) : ?>class="selected"<?php endif; ?>><?php _e( 'Active', 'buddypress' ) ?></a>
 				| <a href="<?php bp_members_directory_permalink(); ?>" id="popular-friends" <?php if ( $instance['friend_default'] == 'popular' ) : ?>class="selected"<?php endif; ?>><?php _e( 'Popular', 'buddypress' ) ?></a>
-			</div>
+			</div> -->
 
 			<ul id="friends-list" class="item-list">
 				<?php while ( bp_members() ) : bp_the_member(); ?>

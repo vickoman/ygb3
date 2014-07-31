@@ -4,7 +4,7 @@
 
 		<?php if ( bp_is_my_profile() ) : ?>
 
-			<p><?php _e( 'You have no unread notifications.', 'buddypress' ); ?></p>
+			<p><?php _e( 'No hay notificaciones.', 'buddypress' ); ?></p>
 
 		<?php else : ?>
 
@@ -16,7 +16,7 @@
 			
 		<?php if ( bp_is_my_profile() ) : ?>
 
-			<p><?php _e( 'You have no notifications.', 'buddypress' ); ?></p>
+			<p><?php _e( 'No hay notificaciones.', 'buddypress' ); ?></p>
 
 		<?php else : ?>
 

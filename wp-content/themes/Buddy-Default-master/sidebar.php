@@ -7,7 +7,10 @@
 
 	<?php if ( is_user_logged_in() ) : ?>
 
-		<?php do_action( 'bp_before_sidebar_me' ); ?>
+		<?php 
+	global $current_user;
+        get_currentuserinfo();
+		do_action( 'bp_before_sidebar_me' ); ?>
 
 			<div class="widget">
 				<div class="widget-body text-center">
@@ -15,10 +18,11 @@
 									<?php bp_loggedin_user_avatar( 'type=full&width=130&height=130&class=img-circle' ); ?>
 					</a>
 					<h2 class="strong margin-none"><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h2>
-					<div class="innerB">Working at MOSAICPRO</div>
+					<!-- <div class="innerB">Working at MOSAICPRO</div> -->
 					<div class="btn-group-vertical btn-block">
-						<a href="/members/<?php bp_displayed_user_mentionname(); ?>/profile/edit/group/1/" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Edit Account</a>
-						<a href="<?php echo wp_logout_url( wp_guess_url() ); ?>" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Logout</a>
+						<a href="javascript:;" class="btn btn-primary text-center btn-block">Servidor Público</a>
+						<a href="<?php bloginfo('url'); ?>/members/<?php echo $current_user->user_login;?>/profile/edit/group/1/" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Editar Cuenta</a>
+						<a href="<?php echo wp_logout_url( wp_guess_url() ); ?>" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Salir</a>
 					</div>
 				</div>
 				<?php do_action( 'bp_sidebar_me' ); ?>

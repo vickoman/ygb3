@@ -106,9 +106,9 @@ class BP_Messages_Component extends BP_Component {
 		if ( bp_is_user() && bp_user_has_access() ) {
 			$count    = bp_get_total_unread_messages_count();
 			$class    = ( 0 === $count ) ? 'no-count' : 'count';
-			$nav_name = sprintf( __( 'Messages <span class="%s">%s</span>', 'buddypress' ), esc_attr( $class ), number_format_i18n( $count ) );
+			$nav_name = sprintf( __( 'Mensajes <span class="%s">%s</span>', 'buddypress' ), esc_attr( $class ), number_format_i18n( $count ) );
 		} else {
-			$nav_name = __( 'Messages', 'buddypress' );
+			$nav_name = __( 'Mensajes', 'buddypress' );
 		}
 
 		// Add 'Messages' to the main navigation

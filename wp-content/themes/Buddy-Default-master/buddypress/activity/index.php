@@ -1,7 +1,65 @@
+ <?php
+ /** 
+ * 
+ * 3rd-party plugins should use this template to easily add template
+ * support to their plugins for the members component.
+ *
+ * @package BuddyPress
+ * @subpackage bp-legacy
+ */
+?>
 <?php do_action( 'bp_before_directory_activity' ); ?>
 
 <div id="buddypress">
 	
+	<!-- modificado por Victor foto portada-->			
+			<div class="timeline-cover">
+				<div class="cover">
+					<div class="top">
+						<img src="<?php echo bloginfo('template_directory'); ?>/images/photodune-2755655-party-time-s.png" class="img-responsive" />
+					</div>
+					<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+<ul class="list-unstyled">
+						<li id="home-li">
+							<a id="user-activity" href="<?php bloginfo('url'); ?>">Inicio</a>
+						</li>
+
+						<li id="activity-personal-li">
+							<a id="user-activity" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/activity/">Actividad</a>
+						</li>
+						<li id="xprofile-personal-li">
+							<a id="user-xprofile" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/profile/">Perfil</a>
+						</li>
+						<?php $count_notification = bp_notifications_get_unread_notification_count( bp_displayed_user_id() ); ?>
+						<li id="notifications-personal-li">
+							<a id="user-notifications" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/notifications/">Notificaciones <span class="no-count"><?php echo $count_notification; ?></span></a>
+						</li>
+						<?php $count_message = bp_get_total_unread_messages_count(); ?>
+						<li id="messages-personal-li">
+							<a id="user-messages" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/messages/">Mensajes <span class="no-count"><?php echo $count_message; ?></span>
+							</a>
+						</li>
+						<?php $count_friends =  friends_get_total_friend_count(); ?>
+						<li id="friends-personal-li">
+							<a id="user-friends" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/friends/">Amigos <span class="no-count"><?php echo $count_friends; ?></span>
+							</a>
+						</li>
+						<?php $count_groups  = bp_get_total_group_count_for_user(); ?>			
+						<li id="groups-personal-li">
+							<a id="user-groups" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/groups/">Grupos <span class="count"><?php echo $count_groups; ?></span>
+							</a>
+						</li>
+						<?php $count_media  = get_rtmedia_like(); ?>						
+						<li id="media-personal-li">
+							<a id="user-media" href="<?php bloginfo('url'); ?>/members/<?php echo bp_core_get_username( bp_loggedin_user_id() ); ?>/media/">Multimedia</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>			
+
+<!-- fin modificado por Victor foto portada-->
+
 	<?php do_action( 'bp_before_directory_activity_content' ); ?>
 
 	<?php if ( is_user_logged_in() ) : ?>

@@ -4,12 +4,24 @@
 
 	<?php if ( bp_thread_has_messages() ) : ?>
 
-		<h3 id="message-subject"><?php bp_the_thread_subject(); ?></h3>
 
-		<p id="message-recipients">
-			<span class="highlight">
+					<!-- User -->
+					<div class="bg-primary">
+						<div class="media">
+							<a href="" class="pull-left">
+								<!-- Espacio para imagen-->
+							</a>
+							<div class="media-body innerTB innerR">
+								<div class="innerT half pull-right">
 
-				<?php if ( !bp_get_the_thread_recipients() ) : ?>
+
+									<a class="button confirm btn btn-default bg-white btn-sm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
+
+								</div>
+								<h4 href="" class="text-white pull-left innerAll strong display-block margin-none">
+								Asunto: <?php bp_the_thread_subject(); ?>
+									<p>
+													<?php if ( !bp_get_the_thread_recipients() ) : ?>
 
 					<?php _e( 'You are alone in this conversation.', 'buddypress' ); ?>
 
@@ -18,11 +30,17 @@
 					<?php printf( __( 'Conversation between %s and you.', 'buddypress' ), bp_get_the_thread_recipients() ); ?>
 
 				<?php endif; ?>
+				</p>
 
-			</span>
 
-			<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
-		</p>
+		</h4>
+
+
+							</div>
+
+						</div>
+					</div>
+
 
 		<?php do_action( 'bp_before_message_thread_list' ); ?>
 

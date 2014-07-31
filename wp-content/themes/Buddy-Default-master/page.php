@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 
+	<?php get_sidebar(); ?>
 		<div class="col-lg-9 col-md-8">
 
 		<?php do_action( 'bp_before_blog_page' ); ?>
@@ -34,6 +35,5 @@
 		</div><!-- .padder -->
 
 
-	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

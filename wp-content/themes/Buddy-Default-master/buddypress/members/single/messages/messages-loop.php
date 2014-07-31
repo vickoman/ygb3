@@ -2,17 +2,20 @@
 
 <?php if ( bp_has_message_threads( bp_ajax_querystring( 'messages' ) ) ) : ?>
 
-	<div class="pagination no-ajax" id="user-pag">
 
+
+		<div class="bg-gray text-center strong border-top innerAll half">
+				<?php bp_messages_pagination_count(); ?>
+		 <i class="fa fa-circle-arrow-down"></i></div>
 		<div class="pag-count" id="messages-dir-count">
-			<?php bp_messages_pagination_count(); ?>
-		</div>
 
+		</div>
 		<div class="pagination-links" id="messages-dir-pag">
 			<?php bp_messages_pagination(); ?>
 		</div>
-
-	</div><!-- .pagination -->
+	<div class="pagination no-ajax" id="user-pag">
+	</div>
+<!-- .pagination -->
 
 	<?php do_action( 'bp_after_member_messages_pagination' ); ?>
 
@@ -30,20 +33,20 @@
 				<?php if ( 'sentbox' != bp_current_action() ) : ?>
 					<td width="30%" class="thread-from">
 						<?php _e( 'From:', 'buddypress' ); ?> <?php bp_message_thread_from(); ?><br />
-						<span class="activity"><?php bp_message_thread_last_post_date(); ?></span>
+						<span class="activity">
+							<p><a href="<?php bp_message_thread_view_link(); ?>" title="<?php esc_attr_e( "View Message", "buddypress" ); ?>">
+							<?php bp_message_thread_subject(); ?> - Ver mensaje</a></p>
+							<?php  bp_message_thread_last_post_date(); ?></span>
 					</td>
 				<?php else: ?>
 					<td width="30%" class="thread-from">
 						<?php _e( 'To:', 'buddypress' ); ?> <?php bp_message_thread_to(); ?><br />
-						<span class="activity"><?php bp_message_thread_last_post_date(); ?></span>
+						<span class="activity">
+						<p><a href="<?php bp_message_thread_view_link(); ?>" title="<?php esc_attr_e( "View Message", "buddypress" ); ?>">
+							<?php bp_message_thread_subject(); ?> - Ver mensaje</a></p>
+							<?php bp_message_thread_last_post_date(); ?></span>
 					</td>
 				<?php endif; ?>
-
-				<td width="50%" class="thread-info">
-					<p><a href="<?php bp_message_thread_view_link(); ?>" title="<?php esc_attr_e( "View Message", "buddypress" ); ?>"><?php bp_message_thread_subject(); ?></a></p>
-					<p class="thread-excerpt"><?php bp_message_thread_excerpt(); ?></p>
-				</td>
-
 				<?php do_action( 'bp_messages_inbox_list_item' ); ?>
 
 				<td width="13%" class="thread-options">
