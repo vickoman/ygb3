@@ -1,4 +1,5 @@
 		</div> <!-- #container -->
+	</div>	
 </div>
 
 		<?php do_action( 'bp_after_container' ); ?>
