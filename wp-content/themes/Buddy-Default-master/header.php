@@ -45,12 +45,12 @@
 		?>
 	</head>
 
-	<body id="bp-default">
+	<body id="bp-default" style="padding-top:60px;">
 		<?php do_action( 'bp_before_header' ); ?>
 
 		<!-- Navbar -->
 		<div>
-			<div class="navbar hidden-print navbar-default box main" role="navigation">
+			<div class="navbar hidden-print navbar-default navbar-fixed-top box main" role="navigation">
 				<div class="user-action  pull-right">
 					<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><?php bp_site_name(); ?></a>
 				</div>
