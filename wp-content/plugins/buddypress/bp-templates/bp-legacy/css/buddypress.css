@@ -350,7 +350,7 @@ body.activity-permalink #buddypress div.activity-meta {
 	color: #fff;
 }
 #buddypress div.activity-comments {
-	margin: 0 0 0 70px;
+	margin: 0 0 0 0px;
 	overflow: hidden; /* IE fix */
 	position: relative;
 	width: auto;
@@ -470,8 +470,8 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
 }
 #buddypress div.activity-comments form div.ac-reply-content {
 	color: #888;
-	margin-left: 50px;
-	padding-left: 15px;
+	/*margin-left: 50px;
+	padding-left: 15px;*/
 }
 #buddypress div.activity-comments form div.ac-reply-content a {
 	text-decoration: none;

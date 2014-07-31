@@ -78,6 +78,36 @@ body {
 	margin: 0 auto;
 	width: 100%;
 }
+
+/*Victor Diaz*/
+img.avatar-activity
+{
+	height: 65px;
+	width: 65px;
+}
+.bpfb_images,
+.thickbox
+{
+	padding:0px;
+	margin:0px;
+}
+.media-body{
+	font-weight: normal;
+	font-size: 1em;
+}
+.media-body a,
+.media-body a:active,
+.media-body a:visited{
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+}
+.media-body a:hover{
+	color:#333;
+}
+
+
+
 .padder {
 	padding: 19px;
 }
