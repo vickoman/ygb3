@@ -147,7 +147,8 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 	</head>
 	<body class="login <?php echo esc_attr( implode( ' ', $classes ) ); ?>">
 	<div id="login">
-		<h1><a href="<?php echo esc_url( $login_header_url ); ?>" title="<?php echo esc_attr( $login_header_title ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+		<!-- <h1><a href="<?php echo esc_url( $login_header_url ); ?>" title="<?php echo esc_attr( $login_header_title ); ?>"><?php bloginfo( 'name' ); ?></a></h1> -->
+		<h1><img style="margin:10px 0px;"src="<?php echo get_stylesheet_directory_uri(); ?>/images/logotipo.png" class="" alt="Yogobierno 3.0" title="Yogobierno3.0"/>									</h1>
 	<?php
 
 	unset( $login_header_url, $login_header_title );
