@@ -13,12 +13,13 @@
                         <div class="col-table-row">
                             <div class="col-app col-unscrollable tab-content">
                                 <div class="col-app lock-wrapper lock-bg-1 tab-pane active animated fadeIn" id="lock-1-1">
-                                    <h3 class="text-white innerB text-center">Acceso a Yogobierno</h3>
+                                    <h3 class="text-white innerB text-center">Acceso a YoGobierno</h3>
                                     <div class="lock-container">
                                         <div class="innerAll text-center">
                                             <!-- Formulario -->
                                             <form class="lwa-form" action="<?php echo esc_attr(LoginWithAjax::$url_login); ?>" method="post">
-                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/people/100/22.jpg" class="img-circle"/>
+                                                <br>
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logotipo.png" class=""/>
                                                 <div class="innerLR">
                                                     <input class="form-control text-center bg-gray" type="text" name="log" placeholder="<?php esc_html_e( 'Username','login-with-ajax' ) ?>"/>
                                                     <input class="form-control text-center bg-gray" type="password" name="pwd"  placeholder="<?php esc_html_e( 'Password','login-with-ajax' ) ?>"/>
