@@ -1410,6 +1410,10 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 3.10 - Extended Profiles
 --------------------------------------------------------------*/
 
+.profile{
+	padding: 20px;
+}
+
 #buddypress div.profile h4 {
 	margin-bottom: auto;
 	margin-top: 15px;
