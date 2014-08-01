@@ -57,7 +57,7 @@
 -->
 					<?php endif; ?>
 
-				<?php do_action( 'bp_directory_members_item' ); ?>
+				<?php 	 ?>
 
 				<?php
 				 /***
@@ -73,14 +73,10 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="innerAll text-right">
-					<!-- botones del tema escondidos
-					<div class="btn-group-vertical btn-group-sm">
-						<a href="" class="btn btn-primary"><i class="fa fa-fw fa-thumbs-up"></i> Like</a>
-						<a href="" class="btn btn-default" data-toggle="sidr-open" data-menu="menu-right"><i class="fa fa-fw fa-envelope-o"></i> Chat</a>
 
-					</div>-->
 					<div class="action">
-						<?php do_action( 'bp_directory_members_actions' ); ?>
+						<?php do_action( 'bp_directory_members_actions' );
+						do_action( 'bp_directory_members_item' ); ?>
 						</div>
 				</div>
 			</div>

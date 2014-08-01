@@ -45,6 +45,7 @@ Hello, this is the BuddyPress Legacy stylesheet.
 	float: left;
 	width: 100%;
 	padding: 0px 0;
+	margin-bottom: 6px;
 }
 #buddypress div.pagination .pag-count {
 	float: left;
