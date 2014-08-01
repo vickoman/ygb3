@@ -21,13 +21,13 @@ define('W3TC_EDGE_MODE', true); // Added by W3 Total Cache
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'yogobierno3');
+define('DB_NAME', 'yogobierno3.0');
 
 /** Tu nombre de usuario de MySQL */
-define('DB_USER', 'yogo');
+define('DB_USER', 'root');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', 'yogobierno2014');
+define('DB_PASSWORD', 'Mm0925163347');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', 'localhost');
