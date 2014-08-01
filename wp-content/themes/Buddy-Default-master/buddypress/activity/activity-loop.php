@@ -29,8 +29,8 @@
 						<div class="galcolumn" id="item1Do7xq" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;"></div>
 						<div id="clearDo7xq" style="clear: both; height: 0px; width: 0px; display: block;"></div><div class="galcolumn" id="item0gqOq9" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;">					
 							<!-- Widget Left -->
-							<?php $act_cont=0; while ( bp_activities() ) : bp_the_activity(); ?>
-							<?php if (($act_cont%2) == 0): ?>
+							<?php $act_cont=1; while ( bp_activities() ) : bp_the_activity(); ?>
+							<?php if (($act_cont%2) != 0): ?>
 
 							<div class="widget gridalicious-item not-responsive" style="margin-bottom: 12px; zoom: 1; opacity: 1;">
 								<!-- Info -->
@@ -59,7 +59,7 @@
 
 								<!-- Comment -->
 								<div class="bg-gray innerAll border-top border-bottom text-small ">
-									
+
 									<?php if ( is_user_logged_in() ) : ?>
 
 										<?php if ( bp_activity_can_comment() ) : ?>
@@ -142,8 +142,8 @@
 						</div>
 						<div class="galcolumn" id="item1gqOq9" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;">
 							<!-- Widget Right -->
-							<?php $act_cont2=0; while ( bp_activities() ) : bp_the_activity(); ?>
-							<?php if (($act_cont2%2) != 0): ?>
+							<?php $act_cont2=1; while ( bp_activities() ) : bp_the_activity(); ?>
+							<?php if (($act_cont2%2) == 0): ?>
 							<div class="widget gridalicious-item not-responsive" style="margin-bottom: 12px; zoom: 1; opacity: 1;">
 <!-- Info -->
 								<div class="bg-primary">
