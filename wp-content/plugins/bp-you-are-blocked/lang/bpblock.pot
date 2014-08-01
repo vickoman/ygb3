@@ -17,33 +17,33 @@ msgstr ""
 "buddypress-block\n"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-actions.php:23
-msgid "User successfully unblocked"
+msgid "Usuario desbloqueado"
 msgstr ""
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-actions.php:31
 msgid "You can not block administrators / moderators"
-msgstr ""
+msgstr "No puedes bloquear a un administrador"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-actions.php:39
 msgid "User successfully blocked"
-msgstr ""
+msgstr "Usuario Bloqueado"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-actions.php:62
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-actions.php:75
 msgid "Block"
-msgstr ""
+msgstr "Bloquear"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-friends.php:46
-msgid "Friendship could not be requested."
+msgid "No se puede pedir amistad"
 msgstr ""
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-friends.php:48
-msgid "Friendship requested"
+msgid "Peticion de amistad solicitada"
 msgstr ""
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-friends.php:52
 msgid "You are already friends with this user"
-msgstr ""
+msgstr "Estas listo para amigarte con este usuarios"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-friends.php:54
 msgid "You already have a pending friendship request with this user"
@@ -55,37 +55,37 @@ msgstr ""
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-profile.php:42
 msgid "Members this user blocks"
-msgstr ""
+msgstr "Miembros bloqueados de este usuario"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-profile.php:44
 msgid "Members you currently block"
-msgstr ""
+msgstr "Miembros bloqueados actualmente"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-profile.php:61
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-profile.php:62
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-profile.php:73
 msgid "No users found"
-msgstr ""
+msgstr "No encontro el usuario"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/includes/bpb-profile.php:88
 msgid "Unblock"
-msgstr ""
+msgstr "Desbloquear"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/templates/blocked.php:6
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/templates/blocking.php:6
 msgid "Blocked Profile"
-msgstr ""
+msgstr "Perfil bloqueado"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/templates/blocked.php:7
 msgid "You have selected to block this profile"
-msgstr ""
+msgstr "Tiene que seleccionarlo para bloquear este perfil"
 
 #: /Users/gabriel/Sites/buddypress/wp-content/plugins/buddypress-block/templates/blocking.php:7
 msgid "This user has blocked you"
-msgstr ""
+msgstr "Este usuario ha sido bloqueado por ti"
