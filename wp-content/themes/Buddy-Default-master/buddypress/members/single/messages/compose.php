@@ -9,7 +9,6 @@
 			<input type="text" name="send-to-input" class="send-to-input" id="send-to-input" />
 		</li>
 	</ul>
-
 	<?php if ( bp_current_user_can( 'bp_moderate' ) ) : ?>
 		<input type="checkbox" id="send-notice" name="send-notice" value="1" /> <?php _e( "This is a notice to all users.", "buddypress" ); ?>
 	<?php endif; ?>
@@ -25,7 +24,8 @@
 	<?php do_action( 'bp_after_messages_compose_content' ); ?>
 
 	<div class="submit">
-		<input type="submit" value="<?php esc_attr_e( "Send Message", 'buddypress' ); ?>" name="send" id="send" />
+		<i class="fa fa-fw icon-outbox-fill"></i>
+		<input type="submit" class="btn btn-primary" value="<?php esc_attr_e( "Send Message", 'buddypress' ); ?>" name="send" id="send" />
 	</div>
 
 	<?php wp_nonce_field( 'messages_send_message' ); ?>

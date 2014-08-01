@@ -32,10 +32,12 @@
 
 				<?php if ( 'sentbox' != bp_current_action() ) : ?>
 					<td width="30%" class="thread-from">
-						<?php _e( 'From:', 'buddypress' ); ?> <?php bp_message_thread_from(); ?><br />
+						<?php bp_message_thread_from(); ?><br />
 						<span class="activity">
 							<p><a href="<?php bp_message_thread_view_link(); ?>" title="<?php esc_attr_e( "View Message", "buddypress" ); ?>">
-							<?php bp_message_thread_subject(); ?> - Ver mensaje</a></p>
+							<?php bp_message_thread_subject(); ?></a>
+
+						</p>
 							<?php  bp_message_thread_last_post_date(); ?></span>
 					</td>
 				<?php else: ?>
@@ -43,24 +45,25 @@
 						<?php _e( 'To:', 'buddypress' ); ?> <?php bp_message_thread_to(); ?><br />
 						<span class="activity">
 						<p><a href="<?php bp_message_thread_view_link(); ?>" title="<?php esc_attr_e( "View Message", "buddypress" ); ?>">
-							<?php bp_message_thread_subject(); ?> - Ver mensaje</a></p>
+							<?php bp_message_thread_subject(); ?></a>
+						</p>
 							<?php bp_message_thread_last_post_date(); ?></span>
 					</td>
 				<?php endif; ?>
 				<?php do_action( 'bp_messages_inbox_list_item' ); ?>
 
 				<td width="13%" class="thread-options">
-					<input type="checkbox" name="message_ids[]" value="<?php bp_message_thread_id(); ?>" />
-					<a class="button confirm" href="<?php bp_message_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
+				<a href="<?php bp_message_thread_view_link(); ?>" class="pull-left btn btn-primary btn-block">
+				 Ver mensaje
+				</a><br>
+					<a class="pull-left btn-block button confirm" href="<?php bp_message_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
 				</td>
 			</tr>
 
 		<?php endwhile; ?>
 	</table><!-- #message-threads -->
 
-	<div class="messages-options-nav">
-		<?php bp_messages_options(); ?>
-	</div><!-- .messages-options-nav -->
+
 
 	<?php do_action( 'bp_after_member_messages_threads' ); ?>
 

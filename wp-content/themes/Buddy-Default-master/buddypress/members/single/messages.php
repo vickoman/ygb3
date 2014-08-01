@@ -22,13 +22,13 @@
 
 <!-- Messages-->
 			<!-- <div class="layout-app">  -->
-			<div class="innerAll">
+
 	<!-- Widget -->
 	<div class="widget widget-messages widget-heading-simple widget-body-white">
 		<div class="widget-body padding-none margin-none">
 
 			<div class="row row-merge borders">
-				<div class="col-md-4 listWrapper">
+				<div class="col-md-5 listWrapper">
 					<div class="innerAll">
 						<form autocomplete="off" class="form-inline margin-none">
 							<div class="input-group input-group-sm">
@@ -60,7 +60,7 @@
 					</div>
 		<?php do_action( 'bp_after_member_messages_content' ); ?>
 				</div>
-				<div class="col-md-8 detailsWrapper">
+				<div class="col-md-7 detailsWrapper">
 
 
 
@@ -112,7 +112,7 @@ endswitch;
 		</div>
 	</div>
 	<!-- // Widget END -->
-</div>
+
 
 
 
