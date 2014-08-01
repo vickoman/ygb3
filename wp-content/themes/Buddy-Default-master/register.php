@@ -24,7 +24,9 @@ Template Name: REGISTROPERSONAL
 						<div class="col-app">
 							<!-- Login -->
 							<div class="login">								
-								<div class="placeholder text-center"><i class="fa fa-pencil"></i></div>
+								<div class="placeholder text-center">								
+									<img style="margin:10px 0px;"src="<?php echo get_stylesheet_directory_uri(); ?>/images/logotipo.png" class="" alt="Yogobierno 3.0" title="Yogobierno3.0"/>									
+								</div>
 								
 								<!-- PAnel -->
 								<div class="panel panel-default col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
