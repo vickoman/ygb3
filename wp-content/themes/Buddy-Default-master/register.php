@@ -67,6 +67,7 @@ Template Name: REGISTROPERSONAL
 												<?php do_action( 'bp_signup_email_errors' ); ?>
 												<input type="text" class="form-control" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" placeholder="<?php _e( 'E-mail', 'buddypress' ); ?>"/>
 											</div>
+									
 											
 											<div class="form-group">
 												<label for="signup_password"><?php _e( 'Escribe tu clave', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
@@ -114,6 +115,13 @@ Template Name: REGISTROPERSONAL
 															<div class="form-group">
 																<label for="field_<?php echo bp_get_the_profile_field_id() ?>"><?php _e( 'Nombres', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 																<input type="text" class="form-control" name="field_<?php echo bp_get_the_profile_field_id() ?>" id="field_<?php echo bp_get_the_profile_field_id() ?>" placeholder="<?php _e( 'Nombres', 'buddypress' ); ?>" />
+															</div>
+														<?php endif ?>
+
+														<?php if (bp_get_the_profile_field_type() == 'number'  and bp_get_the_profile_field_name() == 'Cedula'):?>
+														<div class="form-group">
+																<label for="field_<?php echo bp_get_the_profile_field_id() ?>"><?php _e( 'Número de Cédula', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+																<input type="text" class="form-control" name="field_<?php echo bp_get_the_profile_field_id() ?>" id="field_<?php echo bp_get_the_profile_field_id() ?>" placeholder="<?php _e( 'Número de Cédula', 'buddypress' ); ?>" />
 															</div>
 														<?php endif ?>
 														<?php do_action( 'bp_custom_profile_edit_fields' ); ?>
