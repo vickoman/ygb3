@@ -149,6 +149,7 @@ body.no-js #buddypress form#whats-new-form textarea {
 #buddypress #whats-new-options {
 	overflow: auto;
 	height: 0;
+	width: 98%;
 }
 body.no-js #buddypress #whats-new-options {
 	height: auto;

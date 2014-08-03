@@ -23,7 +23,7 @@ jq(document).ready( function() {
 	/* @mention Compose Scrolling */
 	if ( jq.query.get('r') && jq('textarea#whats-new').length ) {
 		jq('#whats-new-options').animate({
-			height:'40px'
+			height:'54px'
 		});
 		jq("form#whats-new-form textarea").animate({
 			height:'50px'
@@ -40,7 +40,7 @@ jq(document).ready( function() {
 	/* Textarea focus */
 	jq('#whats-new').focus( function(){
 		jq("#whats-new-options").animate({
-			height:'40px'
+			height:'54px'
 		});
 		jq("form#whats-new-form textarea").animate({
 			height:'50px'
@@ -58,7 +58,7 @@ jq(document).ready( function() {
 		if (!this.value.match(/\S+/)) {
 			this.value = "";
 			jq("#whats-new-options").animate({
-				height:'40px'
+				height:'54px'
 			});
 			jq("form#whats-new-form textarea").animate({
 				height:'20px'
