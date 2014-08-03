@@ -122,7 +122,7 @@ Hello, this is the BuddyPress Legacy stylesheet.
 	padding: 0 0 20px 20px;
 }
 #buddypress form#whats-new-form p.activity-greeting {
-	line-height: 0.5em;
+	line-height: 1.5em;
 	margin-bottom: 15px;
 	margin-left: 75px;
 }
