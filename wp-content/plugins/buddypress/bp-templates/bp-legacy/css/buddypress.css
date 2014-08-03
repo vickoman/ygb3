@@ -123,8 +123,9 @@ Hello, this is the BuddyPress Legacy stylesheet.
 }
 #buddypress form#whats-new-form p.activity-greeting {
 	line-height: 1.5em;
-	margin-bottom: 15px;
+	margin-bottom: 6px;
 	margin-left: 75px;
+	margin-top: 5px;
 }
 #buddypress form#whats-new-form textarea {
 	background: #fff;
