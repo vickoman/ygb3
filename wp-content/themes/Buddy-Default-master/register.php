@@ -194,6 +194,7 @@ Template Name: REGISTROPERSONAL
 
 										<div class="submit">
 											<input type="submit" class="btn btn-primary btn-block" name="signup_submit" id="signup_submit" value="<?php esc_attr_e( 'Complete Sign Up', 'buddypress' ); ?>" />
+											<center><a class="btn margin-none" href="<?php echo esc_attr(LoginWithAjax::$url_remember); ?>" title="<?php esc_attr_e('Password Lost and Found','login-with-ajax') ?>"><?php esc_attr_e('Lost your password?','login-with-ajax') ?></a></center>
 											<center><a class="btn margin-none" href="<?php echo get_bloginfo('url');?>/acceso" class="lwa-links-register lwa-links-modal"><?php esc_html_e('Login','login-with-ajax') ?></a> </center>
 										</div>
 
