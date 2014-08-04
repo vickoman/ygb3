@@ -22,7 +22,7 @@
 	<p class="activity-greeting"><?php if ( bp_is_group() )
 		printf( __( "What's new in %s, %s?", 'buddypress' ), bp_get_group_name(), bp_get_user_firstname() );
 	else
-		printf( __( "¿Qué estas pensando %s?", 'buddypress' ), bp_get_user_firstname() );
+		printf( __( "¿Qué estás pensando %s?", 'buddypress' ), bp_get_user_firstname() );
 	?></p>
 
 	<div id="whats-new-content">
