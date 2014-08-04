@@ -203,8 +203,9 @@ class BP_Core_Members_Widget extends WP_Widget {
 				<?php if ( bp_is_active( 'friends' ) ) : ?>
 
 					| <a href="<?php bp_members_directory_permalink(); ?>" id="popular-members" <?php if ( $instance['member_default'] == 'popular' ) : ?>class="selected"<?php endif; ?>><?php _e( 'Popular', 'buddypress' ) ?></a>
-
+					
 				<?php endif; ?>
+				
 			</div>
 
 			<ul id="members-list" class="item-list">
