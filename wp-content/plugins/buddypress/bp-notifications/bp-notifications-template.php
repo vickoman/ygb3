@@ -940,8 +940,8 @@ function bp_notifications_sort_order_form() {
 		<label for="notifications-friends"><?php esc_html_e( 'Order By:', 'buddypress' ); ?></label>
 
 		<select id="notifications-sort-order-list" name="sort_order" onchange="this.form.submit();">
-			<option value="DESC" <?php selected( $selected, 'DESC' ); ?>><?php _e( 'Newest First', 'buddypress' ); ?></option>
-			<option value="ASC"  <?php selected( $selected, 'ASC'  ); ?>><?php _e( 'Oldest First', 'buddypress' ); ?></option>
+			<option value="DESC" <?php selected( $selected, 'DESC' ); ?>><?php _e( 'Reciente primero', 'buddypress' ); ?></option>
+			<option value="ASC"  <?php selected( $selected, 'ASC'  ); ?>><?php _e( 'Antiguos primero', 'buddypress' ); ?></option>
 		</select>
 
 		<noscript>
