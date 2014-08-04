@@ -81,7 +81,7 @@
 
 				<div class="container">
 					<div class="user-action  pull-left">
-						<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><img style="margin-top:-6px;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" class="" height="40" width="160" alt="Yogobierno 3.0" title="Yogobierno3.0"/>									</a>
+						<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><img style="margin-top:-6px; margin-left:5px" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" class="" height="40" width="160" alt="Yogobierno 3.0" title="Yogobierno3.0"/>									</a>
 					</div>
 					<!-- <div class="user-action user-action-btn-navbar pull-left">
 						<a href="#menu" class="btn btn-sm btn-navbar btn-open-left"><i class="fa fa-bars fa-2x"></i></a>

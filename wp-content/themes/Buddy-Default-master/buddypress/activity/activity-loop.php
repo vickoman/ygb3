@@ -22,7 +22,7 @@
 
 		<!-- Activity Cambio de Vickoman -->
 		<div class="row">
-			<div class="col-lg-12 col-md-12">
+			<div class="col-md-12 col-lg-12">
 				<div class="gridalicious-row gridalicious" data-toggle="gridalicious" data-gridalicious-width="340" data-gridalicious-gutter="12" data-gridalicious-selector=".gridalicious-item">
 					<?php do_action( 'bp_before_activity_entry' ); ?>	
 					<div class="galcolumn" id="item0Do7xq" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;"></div>

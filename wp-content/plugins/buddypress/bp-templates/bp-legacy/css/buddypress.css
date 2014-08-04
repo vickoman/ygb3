@@ -478,7 +478,7 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
 	float: left;
 }
 #buddypress div.ac-reply-avatar img {
-	border: 1px solid #eee;
+	/*border: 1px solid #eee;*/
 }
 #buddypress div.activity-comments form div.ac-reply-content {
 	color: #888;
@@ -1315,8 +1315,9 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 #buddypress div.item-list-tabs ul li.selected a,
 #buddypress div.item-list-tabs ul li.current a {
-	background-color: #eee;
-	color: #555;
+	/*background-color: #eee;*/
+	background-color: #000;
+	color: #fff;
 	opacity: .8;
 	font-weight: bold;
 }

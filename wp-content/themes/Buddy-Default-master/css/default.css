@@ -954,7 +954,7 @@ dd.wp-caption p.wp-caption-text,
 5.4 - Images
 --------------------------------------------------------------*/
 img.avatar {
-	border: 2px solid #eee;
+	/*border: 2px solid #eee;*/
 	float: center;
 }
 img.wp-smiley {
