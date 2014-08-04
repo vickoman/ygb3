@@ -5,7 +5,7 @@ Template Name: REGISTROPERSONAL
 ?>
 <title>Yogobierno 3.0 | Registro</title>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
-<div class="content" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/images/lock-1.jpg');height:100%" >
+<div class="content" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/images/lock-1.jpg');height:100%; min-height:1600px" >
 <div class="row row-app" >
 	<!-- col-separator.box -->
 	<div class="col-separator col-unscrollable box">
