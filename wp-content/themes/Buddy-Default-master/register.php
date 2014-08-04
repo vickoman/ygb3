@@ -121,7 +121,7 @@ Template Name: REGISTROPERSONAL
 															</div>
 														<?php endif ?>
 
-														<?php if (bp_get_the_profile_field_type() == 'number'  and bp_get_the_profile_field_name() == 'Cedula'):?>
+														<?php if (bp_get_the_profile_field_type() == 'textbox'  and bp_get_the_profile_field_name() == 'Cedula'):?>
 														<div class="form-group">
 																<label for="field_<?php echo bp_get_the_profile_field_id() ?>"><?php _e( 'Número de Cédula', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 																<input type="text" class="form-control" name="field_<?php echo bp_get_the_profile_field_id() ?>" id="field_<?php echo bp_get_the_profile_field_id() ?>" placeholder="<?php _e( 'Número de Cédula', 'buddypress' ); ?>" />
