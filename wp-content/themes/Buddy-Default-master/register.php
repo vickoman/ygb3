@@ -5,23 +5,24 @@ Template Name: REGISTROPERSONAL
 ?>
 <title>Yogobierno 3.0 | Registro</title>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
-<div class="row row-app">
+<div class="content" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/images/lock-1.jpg');height:100%" >
+<div class="row row-app" >
 	<!-- col-separator.box -->
 	<div class="col-separator col-unscrollable box">
 
 		<!-- col-table -->
-		<div class="col-table">
+		<div class="col-table" >
 				
 				<h4 class="innerAll margin-none border-bottom text-center bg-primary"><i class="fa fa-pencil"></i> Crear nueva cuenta</h4>
 
 				<!-- col-table-row -->
-				<div class="col-table-row">
+				<div class="col-table-row" >
 
 					<!-- col-app -->
-					<div class="col-app col-unscrollable">
+					<div class="col-app col-unscrollable" >
 
 						<!-- col-app -->
-						<div class="col-app">
+						<div class="col-app" >
 							<!-- Login -->
 							<div class="login">								
 								<div class="placeholder text-center">								
@@ -240,3 +241,4 @@ Template Name: REGISTROPERSONAL
 	</div>
 
 </div><!-- #buddypress -->
+</div>

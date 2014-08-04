@@ -5,14 +5,14 @@
  * The location from within your template folder is plugins/login-with-ajax/ (create these directories if they don't exist)
 */
 ?>    
-<div id="content">                      
+<div id="content">                 
         <div class="row row-app">
             <div class="col-md-12">
                 <div class="col-separator col-separator-first box col-unscrollable col-fs">
                     <div class="col-table">
                         <div class="col-table-row">
                             <div class="col-app col-unscrollable tab-content">
-                                <div class="col-app lock-wrapper lock-bg-1 tab-pane active animated fadeIn" id="lock-1-1">
+                                <div class="col-app lock-wrapper lock-bg-1 tab-pane active animated fadeIn" id="lock-1-1" style="background-repeat:repeat;height:100%;">
                                     <h3 class="text-white innerB text-center">Acceso a YoGobierno</h3>
                                     <div class="lock-container">
                                         <div class="innerAll text-center">
@@ -50,4 +50,4 @@
                 </div>
             </div>
         </div>
-</div>	
+</div>
