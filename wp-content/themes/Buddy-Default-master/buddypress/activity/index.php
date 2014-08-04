@@ -20,7 +20,7 @@
 					</div>
 					<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
 <ul class="list-unstyled">
-						<li id="home-li">
+						<li id="activity-personal-li">
 							<a id="user-activity" href="<?php bloginfo('url'); ?>">Inicio</a>
 						</li>
 
