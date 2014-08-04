@@ -9,6 +9,18 @@
  */
 ?>
 <?php do_action( 'bp_before_directory_activity' ); ?>
+<script>
+	$(function(){
+		var url = location.href; 
+		var url2 = '<?php echo home_url();?>'+'/';
+		if(url == url2){
+			$('li#inicio').addClass('current selected');
+			//alert('igual al home');
+		}else{
+			//alert('no igual al home' + url + url2);
+		}
+	})
+</script>
 
 <div id="buddypress">
 	
@@ -19,8 +31,8 @@
 						<img src="<?php echo bloginfo('template_directory'); ?>/images/photodune-2755655-party-time-s.png" class="img-responsive" />
 					</div>
 					<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
-<ul class="list-unstyled">
-						<li id="activity-personal-li">
+					<ul class="list-unstyled">
+						<li id="inicio">
 							<a id="user-activity" href="<?php bloginfo('url'); ?>">Inicio</a>
 						</li>
 
