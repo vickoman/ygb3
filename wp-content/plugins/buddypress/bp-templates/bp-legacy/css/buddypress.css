@@ -136,6 +136,9 @@ Hello, this is the BuddyPress Legacy stylesheet.
 	padding: 6px;
 	width: 98%;
 }
+	#whats-new-post-in-box{
+		display:none !important;
+	}
 body.no-js #buddypress form#whats-new-form textarea {
 	height: 50px;
 }
