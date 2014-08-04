@@ -163,7 +163,12 @@ body.no-js #buddypress #whats-new-options {
 	border-color: rgba(31, 179, 221, 0.9) !important;
 	outline-color: rgba(31, 179, 221, 0.9);
 }
-
+#settings-form{
+	padding: 20px;
+}
+.container-user{
+	padding: 20px;
+}
 /*--------------------------------------------------------------
 3.1.1 - Activity Listing
 --------------------------------------------------------------*/
