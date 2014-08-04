@@ -12,7 +12,7 @@ function bpb_setup_navigation() {
 	if ( !is_user_logged_in() || ( !current_user_can( BPB_ADMIN_CAP ) && get_current_user_id() != bp_displayed_user_id() ) ) return;
 
 	bp_core_new_subnav_item( array(
-		'name'                    => __( 'Blocked Members', 'bpblock' ),
+		'name'                    => __( 'Miembros Bloqueados', 'bpblock' ),
 		'slug'                    => 'blocked',
 		'parent_url'              => $bp->displayed_user->domain . 'settings/',
 		'parent_slug'             => 'settings',
@@ -41,7 +41,7 @@ function bpb_my_blocked_title() {
 	if ( current_user_can( BPB_ADMIN_CAP ) && get_current_user_id() != bp_displayed_user_id() )
 		echo __( 'Members this user blocks', 'bpblock' );
 	else
-		echo __( 'Members you currently block', 'bpblock' );
+		echo __( 'Miembros actualmente bloqueados', 'bpblock' );
 }
 
 /**
@@ -55,11 +55,11 @@ function bpb_my_blocked_members_screen() {
 	$list = bpb_get_blocked_users( $profile_id );
 	if ( empty( $list ) )
 		$list[] = 0; ?>
-
+<div class="container-user">
 <table class="users-blocked">
 	<thead>
-		<th class="user" style="width:70%;"><?php _e( 'User', 'bpblock' ); ?></th>
-		<th class="actions" style="width:30%;"><?php _e( 'Actions', 'bpblock' ); ?></th>
+		<th class="user" style="width:70%;"><?php _e( 'Usuario', 'bpblock' ); ?></th>
+		<th class="actions" style="width:30%;"><?php _e( 'Acciones', 'bpblock' ); ?></th>
 	</thead>
 	<tbody>
 <?php
@@ -70,7 +70,7 @@ function bpb_my_blocked_members_screen() {
 		if ( $user_id == 0 ) { ?>
 
 		<tr>
-			<td colspan="2"><?php _e( 'No users found', 'bpblock' ); ?></td>
+			<td colspan="2"><?php _e( 'No hay usuarios', 'bpblock' ); ?></td>
 		</tr>
 <?php
 		}
@@ -85,7 +85,7 @@ function bpb_my_blocked_members_screen() {
 
 		<tr>
 			<td class="user"><?php echo $user->display_name; ?></td>
-			<td class="actions"><a href="<?php echo bpb_unblock_link( $profile_id, $num ); ?>"><?php _e( 'Unblock', 'bpblock' ); ?></a></td>
+			<td class="actions"><a href="<?php echo bpb_unblock_link( $profile_id, $num ); ?>"><?php _e( 'Desbloquear', 'bpblock' ); ?></a></td>
 		</tr>
 <?php
 		}
@@ -94,6 +94,7 @@ function bpb_my_blocked_members_screen() {
 
 	</tbody>
 </table>
+</div>
 <?php
 }
 

@@ -20,7 +20,7 @@ function bpb_handle_actions() {
 					
 					do_action( 'bpb_action_unblock', $current );
 					
-					bp_core_add_message( __( 'User successfully unblocked', 'bpblock' ) );
+					bp_core_add_message( __( 'Usuario desbloqueado', 'bpblock' ) );
 				}
 			}
 		break;
@@ -28,7 +28,7 @@ function bpb_handle_actions() {
 			if ( wp_verify_nonce( $_REQUEST['token'], 'block-' . $_REQUEST['list'] ) ) {
 				$current = bpb_get_blocked_users( (int) $_REQUEST['list'] );
 				if ( user_can( (int) $_REQUEST['num'], BPB_ADMIN_CAP ) ) {
-					bp_core_add_message( __( 'You can not block administrators / moderators', 'bpblock' ), 'error' );
+					bp_core_add_message( __( 'No puedes bloquear administradores', 'bpblock' ), 'error' );
 				}
 				else {
 					$current[] = (int) $_REQUEST['num'];
@@ -36,7 +36,7 @@ function bpb_handle_actions() {
 				
 					do_action( 'bpb_action_block', $current );
 				
-					bp_core_add_message( __( 'User successfully blocked', 'bpblock' ) );
+					bp_core_add_message( __( 'Usuario bloqueado', 'bpblock' ) );
 				}
 			}
 		break;
@@ -59,7 +59,7 @@ function bpb_insert_block_button_loop() {
 	$user_id = get_current_user_id();
 	$member_id = bp_get_member_user_id();
 	if ( $user_id == $member_id || user_can( $member_id, BPB_ADMIN_CAP ) ) return;
-	echo '<div class="generic-button block-this-user"><a href="' . bpb_block_link( $user_id, $member_id ) . '" class="activity-button">' . __( 'Block', 'bpblock' ) . '</a></div>';
+	echo '<div class="generic-button block-this-user"><a href="' . bpb_block_link( $user_id, $member_id ) . '" class="activity-button">' . __( 'Bloquear', 'bpblock' ) . '</a></div>';
 }
 
 /**
@@ -72,7 +72,7 @@ function bpb_insert_block_button_profile() {
 	$user_id = get_current_user_id();
 	$member_id = bp_displayed_user_id();
 	if ( $user_id == $member_id || user_can( $member_id, BPB_ADMIN_CAP ) ) return;
-	echo '<div class="generic-button block-this-user"><a href="' . bpb_block_link( $user_id, $member_id ) . '" class="activity-button">' . __( 'Block', 'bpblock' ) . '</a></div>';
+	echo '<div class="generic-button block-this-user"><a href="' . bpb_block_link( $user_id, $member_id ) . '" class="activity-button">' . __( 'Bloquear', 'bpblock' ) . '</a></div>';
 }
 
 ?>
