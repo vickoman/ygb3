@@ -1482,7 +1482,7 @@ body.register #buddypress div.page ul {
 
 .widget.buddypress div.item-avatar img.avatar {
 	float: left;
-	margin: 0 10px 15px 0;
+	/*margin: 0 10px 15px 0;*/
 }
 
 .widget.buddypress span.activity {
@@ -1515,7 +1515,7 @@ body.register #buddypress div.page ul {
 }
 .widget.buddypress div.item-avatar img {
 	height: 40px;
-	margin: 1px;
+	/*margin: 1px;*/
 	width: 40px;
 }
 
