@@ -44,6 +44,8 @@
 		global $current_user;
         get_currentuserinfo();
 		?>
+		<link type="text/css" href="/cometchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
+<script type="text/javascript" src="/cometchat/cometchatjs.php" charset="utf-8"></script>
 	</head>
 
 	<body id="bp-default" style="padding-top:60px;">
