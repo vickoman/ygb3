@@ -5,8 +5,10 @@
  * The location from within your template folder is plugins/login-with-ajax/ (create these directories if they don't exist)
 */
 ?>    
-<div id="content">                 
-        <div class="row row-app">
+<title>Yogobierno 3.0 | Registro</title>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
+<div class="content" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/images/lock-1.jpg');height:100%; min-height:1600px" >
+<div class="row row-app" >
             <div class="col-md-12">
                 <div class="col-separator col-separator-first box col-unscrollable col-fs">
                     <div class="col-table">
@@ -15,11 +17,12 @@
                                 <div class="col-app lock-wrapper lock-bg-1 tab-pane active animated fadeIn" id="lock-1-1" style="background-repeat:repeat;height:100%;">
                                     <h3 class="text-white innerB text-center">Acceso a YoGobierno</h3>
                                     <div class="lock-container">
-                                        <div class="innerAll text-center">
+                                        <div class="innerAll text-center" style="margin:0 auto; text-align: center !important; width:300px; height:292px;">
                                             <!-- Formulario -->
-                                            <form class="lwa-form" action="<?php echo esc_attr(LoginWithAjax::$url_login); ?>" method="post">
+                                            <form class="lwa-form" style="position: relative; margin-bottom: 1em;display: block; margin-top: 0em;  " action="<?php echo esc_attr(LoginWithAjax::$url_login); ?>" method="post">
                                                 <br>
                                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logotipo.png" class=""/>
+                                                <br>
                                                 <div class="innerLR">
                                                     <input class="form-control text-center bg-gray" type="text" name="log" placeholder="<?php esc_html_e( 'Username','login-with-ajax' ) ?>"/>
                                                     <input class="form-control text-center bg-gray" type="password" name="pwd"  placeholder="<?php esc_html_e( 'Password','login-with-ajax' ) ?>"/>
