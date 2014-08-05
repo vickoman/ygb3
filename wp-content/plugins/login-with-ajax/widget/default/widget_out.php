@@ -17,11 +17,11 @@
                                 <div class="col-app lock-wrapper lock-bg-1 tab-pane active animated fadeIn" id="lock-1-1" style="background-repeat:repeat;height:100%;">
                                     <h3 class="text-white innerB text-center">Acceso a YoGobierno</h3>
                                     <div class="lock-container">
-                                        <div class="innerAll text-center" style="margin:0 auto; text-align: center !important; width:300px; height:292px;">
+                                        <div class="innerAll text-center" style="margin:0 auto;color: #797979; font-size:14px; background:#fff; text-align: center !important; width:300px; height:292px;">
                                             <!-- Formulario -->
                                             <form class="lwa-form" style="position: relative; margin-bottom: 1em;display: block; margin-top: 0em;  " action="<?php echo esc_attr(LoginWithAjax::$url_login); ?>" method="post">
                                                 <br>
-                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logotipo.png" class=""/>
+                                                <img style="margin:10px 0px;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logotipo.png" class=""/>
                                                 <br>
                                                 <div class="innerLR">
                                                     <input class="form-control text-center bg-gray" type="text" name="log" placeholder="<?php esc_html_e( 'Username','login-with-ajax' ) ?>"/>
