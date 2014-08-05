@@ -29,18 +29,18 @@
                                                 </div>
                                                 <?php do_action('login_form'); ?>
                                                 <div class="innerT">
-                                                    <button type="submit" class="btn btn-primary" name="wp-submit" id="lwa_wp-submit">Entrar <i class="fa fa-fw fa-unlock-alt"></i></button>
+                                                    <button type="submit" style="background:#25ad9f; border-color:#25ad9f; color:white;" class="btn btn-primary" name="wp-submit" id="lwa_wp-submit">Entrar <i class="fa fa-fw fa-unlock-alt"></i></button>
                                                     <input type="hidden" name="lwa_profile_link" value="<?php echo esc_attr($lwa_data['profile_link']); ?>" />
                                                     <input type="hidden" name="login-with-ajax" value="login" />
                                                 </div>
                                                 
                                                 
                                                 <?php if( !empty($lwa_data['remember']) ): ?>
-                                                <a class="btn margin-none" href="<?php echo esc_attr(LoginWithAjax::$url_remember); ?>" title="<?php esc_attr_e('Password Lost and Found','login-with-ajax') ?>"><?php esc_attr_e('Lost your password?','login-with-ajax') ?></a>                                                        
+                                                <a class="btn margin-none" style="color:#25ad9f" href="<?php echo esc_attr(LoginWithAjax::$url_remember); ?>" title="<?php esc_attr_e('Password Lost and Found','login-with-ajax') ?>"><?php esc_attr_e('Lost your password?','login-with-ajax') ?></a>                                                        
                                                 <?php endif; ?>
 
                                                 <?php if ( get_option('users_can_register') && !empty($lwa_data['registration']) ) : ?>
-                                                    <a class="btn margin-none" href="<?php echo get_bloginfo('url');?>/registro" class="lwa-links-register lwa-links-modal"><?php esc_html_e('Register','login-with-ajax') ?></a> 
+                                                    <a class="btn margin-none" style="color:#25ad9f" href="<?php echo get_bloginfo('url');?>/registro" class="lwa-links-register lwa-links-modal"><?php esc_html_e('Register','login-with-ajax') ?></a> 
                                                 <?php endif; ?>                                                        
                                             </form>
                                             <!-- End Formulario -->
