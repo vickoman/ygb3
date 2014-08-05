@@ -79,6 +79,10 @@ body {
 	width: 100%;
 }
 
+iframe {
+	width: 100%;
+}
+
 /*Victor Diaz*/
 img.avatar-activity
 {

@@ -65,7 +65,6 @@ class BP_Groups_Widget extends WP_Widget {
 				<a href="<?php bp_groups_directory_permalink(); ?>" id="newest-groups"<?php if ( $instance['group_default'] == 'newest' ) : ?> class="selected"<?php endif; ?>><?php _e("Newest", 'buddypress') ?></a> |
 				<a href="<?php bp_groups_directory_permalink(); ?>" id="recently-active-groups"<?php if ( $instance['group_default'] == 'active' ) : ?> class="selected"<?php endif; ?>><?php _e("Active", 'buddypress') ?></a> |
 				<a href="<?php bp_groups_directory_permalink(); ?>" id="popular-groups" <?php if ( $instance['group_default'] == 'popular' ) : ?> class="selected"<?php endif; ?>><?php _e("Popular", 'buddypress') ?></a>
-				| <a href="<?php echo home_url(); ?>/groups/create" id="popular-members" ><?php _e( 'Crear', 'buddypress' ) ?></a>
 			</div>
 
 			<ul id="groups-list" class="item-list">
