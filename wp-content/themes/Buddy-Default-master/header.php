@@ -44,6 +44,8 @@
 		global $current_user;
         get_currentuserinfo();
 		?>
+		<link type="text/css" href="/cometchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
+<script type="text/javascript" src="/cometchat/cometchatjs.php" charset="utf-8"></script>
 	</head>
 
 	<body id="bp-default" style="padding-top:60px;">
@@ -78,84 +80,87 @@
 		<!-- Navbar -->
 		<div>
 			<div class="navbar hidden-print navbar-default navbar-fixed-top box main" role="navigation">
-				<div class="user-action  pull-right">
-					<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><?php bp_site_name(); ?></a>
-				</div>
-				<!-- <div class="user-action user-action-btn-navbar pull-left">
-					<a href="#menu" class="btn btn-sm btn-navbar btn-open-left"><i class="fa fa-bars fa-2x"></i></a>
-				</div> -->
 
-				<ul class="notifications pull-left hidden-xs">
-					<li class="dropdown notif">
-						<a href="" class="dropdown-toggle"  data-toggle="dropdown"><i class="notif-block icon-envelope-1"></i><?php if (messages_get_unread_count() > 0): ?><span class="fa fa-star"></span><?php endif; ?></a>
-						<ul class="dropdown-menu chat media-list">
-							<?php if (messages_get_unread_count() > 0): ?>
-							<?php if ( bp_has_message_threads() ) : ?>
-							<?php global $messages_template;?>
-								<?php $x=1; while ( bp_message_threads() ) : bp_message_thread(); ?>
-		 							<?php if ($x <= 3): ?>
-			 							<?php if (bp_message_thread_has_unread()): ?>
-			 							<li class="media">
-								        	<a class="pull-left" href="<?php echo bp_get_message_thread_view_link(); ?>"><img class="media-object thumb" src="<?php echo bp_core_fetch_avatar(array('item_id'=> $messages_template->thread->last_sender_id, 'type' => $type, 'html' => $html, 'alt' => $alt));?>" alt="50x50" width="50"/></a>
-											<div class="media-body">
-									        	<span class="label label-default pull-right"><?php bp_message_thread_last_post_date();?></span>
-									            <h5 class="media-heading"><?php echo bp_get_message_thread_from(); ?></h5>
-									            <p class="margin-none"><?php echo bp_get_message_thread_excerpt();?></p>
-									            <span><a href="<?php echo bp_get_message_thread_view_link(); ?>">Ver</a></span>
-									        </div>
-										</li>
-										<?php endif; ?>
-		 							<?php endif; ?>
-
-							      <?php //bp_message_thread_id() ?>
-							      <?php //bp_message_thread_has_unread() ?>
-							      <?php //bp_message_thread_unread_count() ?>
-							      <?php //bp_message_thread_avatar() ?>
-							      <?php //bp_message_thread_from() ?>
-							      <?php //bp_message_thread_last_post_date() ?>
-							      <?php //bp_message_thread_view_link() ?>
-							      <?php //bp_message_thread_subject() ?>
-							      <?php //bp_message_thread_excerpt() ?>
-							      <?php //bp_message_thread_delete_link() ?>
-
-							  <?php $x++; endwhile; ?>
-
-							<?php endif; ?>
-							<?php else: ?>
-							<li class="media">
-								<div class="media-body">
-						            <p class="margin-none">No tienes mensajes nuevos :(</p>
-						        </div>
-							</li>
-							<?php endif; ?>
-				      	</ul>
-					</li>
-				</ul>
-
-				<div class="user-action pull-left menu-right-hidden-xs menu-left-hidden-xs border-left">
-					<div class="dropdown username pull-left">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-							<span class="media margin-none">
-								<span class="pull-left"><img src="<?php echo bp_core_fetch_avatar(array( 'item_id' => $bp->loggedin_user->id, 'type' => $type, 'html' => $html, 'alt' => $alt));?>" alt="user" class="img-circle"></span>
-								<?php //echo bp_get_displayed_user_avatar(); ?>
-
-
-								<span class="media-body"><?php echo $bp->loggedin_user->fullname;?> <span class="caret"></span></span>
-							</span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/profile" >Mi peril </a></li>
-							<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/messages">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
-						 	<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/settings">Configuración</a></li>
-							<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>">Salir</a></li>
-					    </ul>
+				<div class="container">
+					<div class="user-action  pull-left">
+						<a href="<?php echo home_url(); ?>" alt="<?php _ex( 'Home', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>" title="<?php _ex( 'Inicio', 'Yogobieno 3.0 Inicio', 'buddypress' ); ?>"><img style="margin-top:-6px; margin-left:5px" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo2.png" class="" height="40" width="160" alt="Yogobierno 3.0" title="Yogobierno3.0"/>									</a>
 					</div>
-				</div>
-				<div class="input-group hidden-xs pull-left">
-					<form action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
-				  	<span class="input-group-addon"><i class="icon-search"></i></span>
-				  	<input type="text" id="search-terms" name="search-terms" class="form-control" placeholder="Buscar Amigo" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
-				  </form>
+					<!-- <div class="user-action user-action-btn-navbar pull-left">
+						<a href="#menu" class="btn btn-sm btn-navbar btn-open-left"><i class="fa fa-bars fa-2x"></i></a>
+					</div> -->
+
+					<ul class="notifications pull-left hidden-xs">
+						<li class="dropdown notif">
+							<a href="" class="dropdown-toggle"  data-toggle="dropdown"><i class="notif-block icon-envelope-1"></i><?php if (messages_get_unread_count() > 0): ?><span class="fa fa-star"></span><?php endif; ?></a>
+							<ul class="dropdown-menu chat media-list">
+								<?php if (messages_get_unread_count() > 0): ?>
+								<?php if ( bp_has_message_threads() ) : ?>
+								<?php global $messages_template;?>
+									<?php $x=1; while ( bp_message_threads() ) : bp_message_thread(); ?>
+			 							<?php if ($x <= 3): ?>
+				 							<?php if (bp_message_thread_has_unread()): ?>
+				 							<li class="media">
+									        	<a class="pull-left" href="<?php echo bp_get_message_thread_view_link(); ?>"><img class="media-object thumb" src="<?php echo bp_core_fetch_avatar(array('item_id'=> $messages_template->thread->last_sender_id, 'type' => $type, 'html' => $html, 'alt' => $alt));?>" alt="50x50" width="50"/></a>
+												<div class="media-body">
+										        	<span class="label label-default pull-right"><?php bp_message_thread_last_post_date();?></span>
+										            <h5 class="media-heading"><?php echo bp_get_message_thread_from(); ?></h5>
+										            <p class="margin-none"><?php echo bp_get_message_thread_excerpt();?></p>
+										            <span><a href="<?php echo bp_get_message_thread_view_link(); ?>">Ver</a></span>
+										        </div>
+											</li>
+											<?php endif; ?>
+			 							<?php endif; ?>
+
+								      <?php //bp_message_thread_id() ?>
+								      <?php //bp_message_thread_has_unread() ?>
+								      <?php //bp_message_thread_unread_count() ?>
+								      <?php //bp_message_thread_avatar() ?>
+								      <?php //bp_message_thread_from() ?>
+								      <?php //bp_message_thread_last_post_date() ?>
+								      <?php //bp_message_thread_view_link() ?>
+								      <?php //bp_message_thread_subject() ?>
+								      <?php //bp_message_thread_excerpt() ?>
+								      <?php //bp_message_thread_delete_link() ?>
+
+								  <?php $x++; endwhile; ?>
+
+								<?php endif; ?>
+								<?php else: ?>
+								<li class="media">
+									<div class="media-body">
+							            <p class="margin-none">No tienes mensajes nuevos :(</p>
+							        </div>
+								</li>
+								<?php endif; ?>
+					      	</ul>
+						</li>
+					</ul>
+
+					<div class="user-action pull-left menu-right-hidden-xs menu-left-hidden-xs border-left">
+						<div class="dropdown username pull-left">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<span class="media margin-none">
+									<span class="pull-left"><img src="<?php echo bp_core_fetch_avatar(array( 'item_id' => $bp->loggedin_user->id, 'type' => $type, 'html' => $html, 'alt' => $alt));?>" alt="user" class="img-circle"></span>
+									<?php //echo bp_get_displayed_user_avatar(); ?>
+
+
+									<span class="media-body"><?php echo $bp->loggedin_user->fullname;?> <span class="caret"></span></span>
+								</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/profile" >Mi peril </a></li>
+								<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/messages">Mensajes (<?php echo messages_get_unread_count();?>)</a></li>
+							 	<li><a href="<?php echo home_url(); ?>/members/<?php echo $current_user->user_login;?>/settings">Configuración</a></li>
+								<li><a href="<?php echo wp_logout_url( wp_guess_url() ); ?>">Salir</a></li>
+						    </ul>
+						</div>
+					</div>
+					<div class="input-group hidden-xs pull-left">
+						<form action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
+					  	<span class="input-group-addon"><i class="icon-search"></i></span>
+					  	<input type="text" id="search-terms" name="search-terms" class="form-control" placeholder="Buscar Amigo" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
+					  </form>
+					</div>
 				</div>
 			</div>
 			<?php do_action( 'bp_header' ); ?>

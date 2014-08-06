@@ -1532,10 +1532,10 @@ function rtmedia_user_album_list( $get_all = false, $selected_album_id = false )
 	}
 	$option = "$global_option";
 	if ( $profile_option != "" ){
-		$option .= "<optgroup label='" . __( "Profile Albums", "rtmedia" ) . " ' value = 'profile'>$profile_option</optgroup>";
+		$option .= "<optgroup label='" . __( "Álbum de perfil", "rtmedia" ) . " ' value = 'profile'>$profile_option</optgroup>";
 	}
 	if ( $option_group != "" && class_exists( 'BuddyPress' ) ){
-		$option .= "<optgroup label='" . __( "Group Albums", "rtmedia" ) . "' value = 'group'>$option_group</optgroup>";
+		$option .= "<optgroup label='" . __( "Álbum de grupos", "rtmedia" ) . "' value = 'group'>$option_group</optgroup>";
 	}
 	if ( $option ){
 		return $option;

@@ -12,6 +12,9 @@
 <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
 	<ul>
 		<?php if ( bp_is_my_profile() ) bp_get_options_nav(); ?>
+		<li id="groups-personal-li">
+			<a id="invites" href="<?php bloginfo('url'); ?>/groups/create/step/group-details/">Crear Grupo</a>
+		</li>
 
 		<?php if ( !bp_is_current_action( 'invites' ) ) : ?>
 

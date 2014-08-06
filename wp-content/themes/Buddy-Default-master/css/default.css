@@ -78,6 +78,40 @@ body {
 	margin: 0 auto;
 	width: 100%;
 }
+
+iframe {
+	width: 100%;
+}
+
+/*Victor Diaz*/
+img.avatar-activity
+{
+	height: 65px;
+	width: 65px;
+}
+.bpfb_images,
+.thickbox
+{
+	padding:0px;
+	margin:0px;
+}
+.media-body{
+	font-weight: normal;
+	font-size: 1em;
+}
+.media-body a,
+.media-body a:active,
+.media-body a:visited{
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+}
+.media-body a:hover{
+	color:#333;
+}
+
+
+
 .padder {
 	padding: 19px;
 }
@@ -141,13 +175,13 @@ textarea {
 2.2 - Header
 --------------------------------------------------------------*/
 #header {
-	background: #1fb3dd; /* Old browsers */
-	background: -moz-linear-gradient(top, #1fb3dd 0%, #1fb3dd 15%, #394c79 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1fb3dd), color-stop(15%,#1fb3dd), color-stop(100%,#394c79)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #1fb3dd 0%,#1fb3dd 15%,#394c79 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #1fb3dd 0%,#1fb3dd 15%,#394c79 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #1fb3dd 0%,#1fb3dd 15%,#394c79 100%); /* IE10+ */
-	background: linear-gradient(top, #1fb3dd 0%,#1fb3dd 15%,#394c79 100%); /* W3C */
+	background: #25AD9F; /* Old browsers */
+	background: -moz-linear-gradient(top, #25AD9F 0%, #25AD9F 15%, #394c79 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25AD9F), color-stop(15%,#25AD9F), color-stop(100%,#394c79)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #25AD9F 0%,#25AD9F 15%,#394c79 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #25AD9F 0%,#25AD9F 15%,#394c79 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #25AD9F 0%,#25AD9F 15%,#394c79 100%); /* IE10+ */
+	background: linear-gradient(top, #25AD9F 0%,#25AD9F 15%,#394c79 100%); /* W3C */
 	-moz-border-radius-bottomleft: 6px;
 	-webkit-border-bottom-left-radius: 6px;
 	border-bottom-left-radius: 6px;
@@ -511,7 +545,7 @@ div.page ul ol {
 4.0 - Navigation
 --------------------------------------------------------------*/
 a {
-	color: #1fb3dd;
+	color: #25AD9F;
 }
 a:hover,
 a:active {
@@ -924,7 +958,7 @@ dd.wp-caption p.wp-caption-text,
 5.4 - Images
 --------------------------------------------------------------*/
 img.avatar {
-	border: 2px solid #eee;
+	/*border: 2px solid #eee;*/
 	float: center;
 }
 img.wp-smiley {
@@ -1062,3 +1096,4 @@ p.postmetadata {
 span.sticky-post {
 	font-style: normal;
 }*/
+

@@ -127,9 +127,9 @@ function messages_format_notifications( $action, $item_id, $secondary_item_id, $
 			$link = bp_get_message_thread_view_link( $thread_id );
 
 			if ( ! empty( $secondary_item_id ) ) {
-				$text = sprintf( __( '%s sent you a new private message', 'buddypress' ), bp_core_get_user_displayname( $secondary_item_id ) );
+				$text = sprintf( __( '%s te envió un nuevo mensaje privado', 'buddypress' ), bp_core_get_user_displayname( $secondary_item_id ) );
 			} else {
-				$text = sprintf( __( 'You have %d new private messages', 'buddypress' ), (int) $total_items );
+				$text = sprintf( __( 'Tu tienes %d nuevos mensajes privados', 'buddypress' ), (int) $total_items );
 			}
 			$filter = 'bp_messages_single_new_message_notification';
 		}

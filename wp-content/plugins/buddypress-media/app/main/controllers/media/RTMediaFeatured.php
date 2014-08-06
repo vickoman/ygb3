@@ -22,7 +22,7 @@ class RTMediaFeatured extends RTMediaUserInteraction {
     function __construct ( $user_id = false, $flag = true ) {
         $args = array(
             'action' => 'featured',
-            'label' => __('Set as Featured'),
+            'label' => __('Establecer destacado'),
             'plural' => '',
             'undo_label' => __( 'Unset Featured', 'rtmedia' ),
             'privacy' => 60,

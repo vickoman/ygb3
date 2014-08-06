@@ -22,7 +22,7 @@
 	<p class="activity-greeting"><?php if ( bp_is_group() )
 		printf( __( "What's new in %s, %s?", 'buddypress' ), bp_get_group_name(), bp_get_user_firstname() );
 	else
-		printf( __( "What's new, %s?", 'buddypress' ), bp_get_user_firstname() );
+		printf( __( "¿Qué estás pensando %s?", 'buddypress' ), bp_get_user_firstname() );
 	?></p>
 
 	<div id="whats-new-content">
@@ -32,7 +32,7 @@
 
 		<div id="whats-new-options">
 			<div id="whats-new-submit">
-				<input type="submit" name="aw-whats-new-submit" id="aw-whats-new-submit" value="<?php esc_attr_e( 'Post Update', 'buddypress' ); ?>" />
+				<input type="submit" name="aw-whats-new-submit" id="aw-whats-new-submit" value="<?php esc_attr_e( 'Publicar', 'buddypress' ); ?>" />
 			</div>
 
 			<?php if ( bp_is_active( 'groups' ) && !bp_is_my_profile() && !bp_is_group() ) : ?>

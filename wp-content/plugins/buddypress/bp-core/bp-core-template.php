@@ -301,7 +301,7 @@ function bp_format_time( $time, $just_date = false, $localize_time = true ) {
 		$time = date_i18n( get_option( 'time_format' ), $time_offset );
 
 		// Return string formatted with date and time
-		$date = sprintf( __( '%1$s at %2$s', 'buddypress' ), $date, $time );
+		$date = sprintf( __( '%1$s %2$s', 'buddypress' ), $date, $time );
 	}
 
 	return apply_filters( 'bp_format_time', $date );

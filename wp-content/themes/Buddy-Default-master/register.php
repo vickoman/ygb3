@@ -5,26 +5,29 @@ Template Name: REGISTROPERSONAL
 ?>
 <title>Yogobierno 3.0 | Registro</title>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/module.admin.stylesheet-complete.min.css" />
-<div class="row row-app">
+<div class="content" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/images/lock-1.jpg');height:100%; min-height:1600px" >
+<div class="row row-app" >
 	<!-- col-separator.box -->
 	<div class="col-separator col-unscrollable box">
 
 		<!-- col-table -->
-		<div class="col-table">
+		<div class="col-table" >
 				
 				<h4 class="innerAll margin-none border-bottom text-center bg-primary"><i class="fa fa-pencil"></i> Crear nueva cuenta</h4>
 
 				<!-- col-table-row -->
-				<div class="col-table-row">
+				<div class="col-table-row" >
 
 					<!-- col-app -->
-					<div class="col-app col-unscrollable">
+					<div class="col-app col-unscrollable" >
 
 						<!-- col-app -->
-						<div class="col-app">
+						<div class="col-app" >
 							<!-- Login -->
 							<div class="login">								
-								<div class="placeholder text-center"><i class="fa fa-pencil"></i></div>
+								<div class="placeholder text-center">								
+									<img style="margin:10px 0px;"src="<?php echo get_stylesheet_directory_uri(); ?>/images/logotipo.png" class="" alt="Yogobierno 3.0" title="Yogobierno3.0"/>									
+								</div>
 								
 								<!-- PAnel -->
 								<div class="panel panel-default col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
@@ -67,6 +70,7 @@ Template Name: REGISTROPERSONAL
 												<?php do_action( 'bp_signup_email_errors' ); ?>
 												<input type="text" class="form-control" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" placeholder="<?php _e( 'E-mail', 'buddypress' ); ?>"/>
 											</div>
+									
 											
 											<div class="form-group">
 												<label for="signup_password"><?php _e( 'Escribe tu clave', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
@@ -116,9 +120,16 @@ Template Name: REGISTROPERSONAL
 																<input type="text" class="form-control" name="field_<?php echo bp_get_the_profile_field_id() ?>" id="field_<?php echo bp_get_the_profile_field_id() ?>" placeholder="<?php _e( 'Nombres', 'buddypress' ); ?>" />
 															</div>
 														<?php endif ?>
+
+														<?php if (bp_get_the_profile_field_type() == 'textbox'  and bp_get_the_profile_field_name() == 'Cedula'):?>
+														<div class="form-group">
+																<label for="field_<?php echo bp_get_the_profile_field_id() ?>"><?php _e( 'Número de Cédula', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+																<input type="text" class="form-control" name="field_<?php echo bp_get_the_profile_field_id() ?>" id="field_<?php echo bp_get_the_profile_field_id() ?>" placeholder="<?php _e( 'Número de Cédula', 'buddypress' ); ?>" />
+															</div>
+														<?php endif ?>
 														<?php do_action( 'bp_custom_profile_edit_fields' ); ?>
 
-														<p class="description"><?php bp_the_profile_field_description(); ?></p>
+														<p class="description"><?php //bp_the_profile_field_description(); ?></p>
 
 													</div>
 
@@ -183,6 +194,7 @@ Template Name: REGISTROPERSONAL
 
 										<div class="submit">
 											<input type="submit" class="btn btn-primary btn-block" name="signup_submit" id="signup_submit" value="<?php esc_attr_e( 'Complete Sign Up', 'buddypress' ); ?>" />
+											<center><a class="btn margin-none" href="<?php echo esc_attr(LoginWithAjax::$url_remember); ?>" title="<?php esc_attr_e('Password Lost and Found','login-with-ajax') ?>"><?php esc_attr_e('Lost your password?','login-with-ajax') ?></a></center>
 											<center><a class="btn margin-none" href="<?php echo get_bloginfo('url');?>/acceso" class="lwa-links-register lwa-links-modal"><?php esc_html_e('Login','login-with-ajax') ?></a> </center>
 										</div>
 
@@ -230,3 +242,4 @@ Template Name: REGISTROPERSONAL
 	</div>
 
 </div><!-- #buddypress -->
+</div>
