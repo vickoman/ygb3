@@ -217,6 +217,23 @@ textarea {
 	padding: 1px 4px;
 	margin-left: 4px;
 }
+.input-group-sm{
+	width: 100%
+}
+.message-search{
+	width: 100%;
+	float: left !important;
+	margin: 0px !important;
+}
+.message-search label{
+	width: 77%
+}
+.message-search label #messages_search{
+	width: 100% !important;
+}
+.message-search #messages_search_submit{
+	padding: 2px 10px !important;
+}
 #header h1 {
 	float: left;
 	margin-bottom: 0;
