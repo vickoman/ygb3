@@ -123,42 +123,6 @@ get_currentuserinfo(); ?>
 
 
 
-
-
-<!--
-
-			<div class="innerT">
-				<div class="widget">
-					<div class="widget-head border-bottom bg-gray">
-									<h5 class="pull-left margin-none innerAll">Amigos <span class="text-muted">(<?php echo $count_friends ?>)</span></h5>
-								<div class="pull-right">
-									<a href="" class="text-muted">
-										<i class="fa fa-eye innerL"></i>
-									</a>
-								</div>
-							</div>
-				
-							<div class="widget-body margin-none">
-								<div class="innerAll">
-										<?php do_action( 'bp_before_directory_members_list' ); ?>
-				<?php while ( bp_members() ) : bp_the_member(); ?>
-					<a href="<?php bp_member_permalink() ?>" title="<?php bp_member_name() ?>">
-							<?php bp_member_avatar('type=full&width=105&height=105'); ?></a>
-								<?php endwhile; ?>														
-										
-								</div>
-							</div>
-				
-				</div>
-			</div>
-
-
--->
-
-
-
-
-
 			</div>
 
 			<?php do_action( 'bp_after_profile_field_content' ); ?>
