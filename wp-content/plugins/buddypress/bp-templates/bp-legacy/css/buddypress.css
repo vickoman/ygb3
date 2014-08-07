@@ -980,7 +980,8 @@ a.bp-title-button {
 	width: 25%;
 }
 .tittle-Msj{
-	font-size: 32px;
+	margin-top: 15px;
+	font-size: 24px;
 	text-align: center;
 }
 #buddypress table tr td.thread-info p {
