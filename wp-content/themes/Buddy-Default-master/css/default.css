@@ -90,6 +90,10 @@ img.avatar-activity
 	height: 65px;
 	width: 65px;
 }
+.widget-body img 
+{
+	border-radius: 50%;
+}
 .bpfb_images,
 .thickbox
 {
