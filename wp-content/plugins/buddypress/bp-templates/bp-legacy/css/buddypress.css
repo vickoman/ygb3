@@ -801,6 +801,111 @@ a.bp-title-button {
 #buddypress .wp-editor-wrap input[type=reset] {
 	padding: 0 10px 1px;
 }
+
+/** css modificado **/
+#buddypress a.button, #buddypress a.button:hover{
+	background:none !important;
+	border: 0px !important;
+	padding: 4px 4px !important;
+}
+#buddypress div.activity-type-tabs{
+	margin-bottom: 5px;
+}
+#buddypress div.activity-type-tabs ul li{
+	margin-right: 1% !important;
+	margin-left: 1% !important;
+
+}
+
+#buddypress div.item-list-tabs{
+	border: 1px solid #EAEAEA;
+}
+#subnav li{
+	margin-right: 2% !important;
+	margin-left: 2% !important;
+}
+#groups-list li .action{
+	margin-right: 20px;
+}
+#rtm-media-options .primary, #rtm-media-options .primary i{
+	color: #209488 !important;
+}
+#buddypress div.activity-comments div.acomment-avatar img{
+	width: 50px;
+	height: 50px;
+}
+
+#groups-list-options a{
+	margin-right: 20%;
+}
+#groups-list-options #popular-groups{
+		margin-right: 0px;
+}
+#members-list-options a{
+	margin-right: 20%;
+}
+#members-list-options #popular-members{
+		margin-right: 0px;
+}
+.friendship-button a{
+padding-left: 12px !important;
+padding-right: 12px !important;
+}
+#buddypress div#message p, #sitewide-notice p{
+	background: #00a798 !important;
+	border: 1px solid #00a798 !important;
+	color: white !important;
+}
+#buddypress div#message.error p {
+	background-color: #a94d7b !important;
+border: 1px solid #a94d7b !important;
+clear: left;
+color: #800;
+}
+
+.left-option{
+	float: right !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+.left-option a, #rtm-media-options button{
+		font-size: 12px !important;
+}
+.rtmedia-delete-album{
+border:none !important;
+padding: 0px !important;
+margin-left: 5px !important;
+margin-right: 5px !important;
+}
+.rtmedia-delete-album:hover{
+background:none !important;
+}
+.rtmedia-container .rtmedia-editor-main dl.tabs dd.active>a, .rtmedia-activity-container .rtmedia-editor-main dl.tabs dd.active>a, #buddypress div.rtmedia-activity-container .rtmedia-editor-main dl.tabs dd.active>a
+{
+	background:#00a798 !important;
+}
+#buddypress .rtmedia-single-container .rtmedia-single-meta div.rtmedia-actions-before-comments>span a, #buddypress .rtmedia-single-container .rtmedia-single-meta div.rtmedia-actions-before-comments>span button, #buddypress .rtmedia-single-container .rtmedia-single-meta div.rtmedia-actions-before-comments>span button.rtmedia-action-buttons
+{
+	color:#00a798 !important;
+}
+.rtmedia-container .rtMedia-queue-list tr.upload-error, .rtmedia-activity-container .rtMedia-queue-list tr.upload-error, #buddypress div.rtmedia-activity-container .rtMedia-queue-list tr.upload-error
+{
+	background: #a94d7b !important;
+	border-bottom:1px solid #a94d7b !important;
+}
+#buddypress #message.info p{
+	background:#d792b8 !important;
+	border: 1px solid #d792b8 !important;
+}
+#account-delete-form{
+	padding: 20px;
+}
+
+/** css modificado **/
+
+
+
+
 /*--------------------------------------------------------------
 3.6 - Ajax Loading
 --------------------------------------------------------------*/

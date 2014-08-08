@@ -17,8 +17,7 @@
 <li id="acomment-<?php bp_activity_comment_id(); ?>">
 	<div class="acomment-avatar">
 		<a href="<?php bp_activity_comment_user_link(); ?>">
-			<?php bp_activity_avatar( 'type=thumb&user_id=' . bp_get_activity_comment_user_id() ); ?>
-		</a>
+<?php bp_activity_avatar( 'type=medium&width=50&height=50&user_id=' . bp_get_activity_comment_user_id() ); ?>		</a>
 	</div>
 
 	<div class="acomment-meta">

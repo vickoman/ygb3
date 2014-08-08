@@ -18,7 +18,9 @@
 	<div class="acomment-avatar">
 		<a href="<?php bp_activity_comment_user_link(); ?>">
 			<?php bp_activity_avatar( array(
-				'type'    => 'thumb',
+				'type'    => 'medium',
+				'width'   => '50',
+				'heigh'   => '50',
 				'user_id' => bp_get_activity_comment_user_id()
 			) ); ?>
 		</a>

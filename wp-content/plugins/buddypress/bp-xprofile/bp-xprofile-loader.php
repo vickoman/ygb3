@@ -106,22 +106,22 @@ class BP_XProfile_Component extends BP_Component {
 		$this->visibility_levels = array(
 			'public' => array(
 				'id'	  => 'public',
-				'label' => __( 'Everyone', 'buddypress' )
+				'label' => __( 'Público', 'buddypress' )
 			),
 			'adminsonly' => array(
 				'id'	  => 'adminsonly',
-				'label' => __( 'Only Me', 'buddypress' )
+				'label' => __( 'Sólo yo', 'buddypress' )
 			),
 			'loggedin' => array(
 				'id'	  => 'loggedin',
-				'label' => __( 'All Members', 'buddypress' )
+				'label' => __( 'Todos los Miembros', 'buddypress' )
 			)
 		);
 
 		if ( bp_is_active( 'friends' ) ) {
 			$this->visibility_levels['friends'] = array(
 				'id'	=> 'friends',
-				'label'	=> __( 'My Friends', 'buddypress' )
+				'label'	=> __( 'Mis Amigos', 'buddypress' )
 			);
 		}
 

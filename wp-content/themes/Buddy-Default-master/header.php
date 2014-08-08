@@ -51,21 +51,21 @@
 @font-face {
 font-family: 'HelveticaNeue';
 src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.eot'); /* IE9 Compat Modes */
-src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue?#iefix') format('embedded-opentype'), 
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.woff') format('woff'), 
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.ttf')  format('truetype'), 
+src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue?#iefix') format('embedded-opentype'),
+url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.woff') format('woff'),
+url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue-Thin.ttf')  format('truetype'),
 url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.svg#Helvetica Neue') format('svg'); /* Legacy iOS */
 }
 .color-d a{color:#ccc !important;"}
 .list-unstyled #inicio a:before, .list-unstyled #home-li a:before {
   content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/inicio.png");
-}	
+}
 .list-unstyled #activity-personal-li a:before {
   content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/actividad.png");
-}	
+}
 .list-unstyled #xprofile-personal-li a:before {
   content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/perfil.png");
-}	
+}
 .list-unstyled #notifications-personal-li a:before {
   content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/notificaciones.png");
 }
@@ -117,7 +117,7 @@ url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.svg#Helvet
 			}, function(response){});
 	    </script>
 	    <div id="fb-root"></div>
-		
+
 		<?php do_action( 'bp_before_header' ); ?>
 
 		<!-- Navbar -->

@@ -1,8 +1,9 @@
 <div class="rtmedia-container">
     <?php do_action ( 'rtmedia_before_album_gallery' ); ?>
     <div id="rtm-gallery-title-container" class="row">
-        <h2 class="rtm-gallery-title columns large-7 small-12 medium-7"><?php _e( 'Album List' , 'rtmedia' ) ; ?></h2>
-        <div id="rtm-media-options" class="columns large-5 small-12 medium-5"><?php do_action ( 'rtmedia_album_gallery_actions' ); ?></div>
+       <h2 class="rtm-gallery-title columns large-3 small-12 medium-3" style="width:35%"><?php _e( 'Album List' , 'rtmedia' ) ; ?></h2>
+        <div id="rtm-media-options" class="columns large-9 small-12 medium-9" style="width:65%"><?php do_action ( 'rtmedia_album_gallery_actions' ); ?></div>
+
     </div>
 	<div class="clear"></div>
     <?php do_action ( 'rtmedia_after_album_gallery_title' ); ?>
@@ -55,7 +56,7 @@
 
     <?php } else { ?>
         <p class="rtmedia-no-media-found">
-            <?php 
+            <?php
                 $message = __ ( "Sorry !! There's no media found for the request !!", "rtmedia" );
                 echo apply_filters('rtmedia_no_media_found_message_filter', $message);
                 ?>

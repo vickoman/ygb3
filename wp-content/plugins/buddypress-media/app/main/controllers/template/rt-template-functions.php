@@ -823,7 +823,7 @@ function rtmedia_pagination_prev_link() {
 function rtmedia_pagination_next_link() {
 
 	global $rtmedia_media, $rtmedia_interaction, $rtmedia_query;
-        
+
 	$page_url    = 'pg/' . ( rtmedia_page() + 1 );
 	$site_url    = ( is_multisite() ) ? trailingslashit( get_site_url( get_current_blog_id() ) ) : trailingslashit( get_site_url() );
 	$author_name = get_query_var( 'author_name' );
@@ -901,49 +901,49 @@ function rtmedia_pagination_page_link( $page_no ) {
 }
 
 // Function for pagination
-function rtmedia_media_pagination() {      
+function rtmedia_media_pagination() {
      global $rtmedia, $rtmedia_backbone;
      if( $rtmedia_backbone[ 'backbone' ] ){
          echo "<%= pagination %>";
      } else {
         echo rtmedia_get_pagination_values();
-    }          
+    }
 }
 
 function rtmedia_get_pagination_values(){
     global $rtmedia, $rtmedia_query;
-    
+
     $general_options = $rtmedia->options;
-    
+
     $per_page = $general_options[ 'general_perPageMedia' ];
-    
+
     if( isset( $rtmedia_query->query[ 'per_page' ] ) ) {
         $per_page = $rtmedia_query->query[ 'per_page' ];
     }
-    
+
     $range = 1;
-    
-    $showitems = ( $range * 2 )+1;  
+
+    $showitems = ( $range * 2 )+1;
     $rtmedia_media_pages = '';
-    
+
     global $paged;
-    
-    if( rtmedia_offset() == 0 ) 
+
+    if( rtmedia_offset() == 0 )
         $paged = 1;
-    else if ( rtmedia_offset() == $per_page ) 
+    else if ( rtmedia_offset() == $per_page )
         $paged = 2;
-    else 
+    else
         $paged = ceil( rtmedia_offset() / $per_page ) + 1;
-    
+
     $pages = ceil( rtmedia_count() / $per_page );
     if( !$pages ) {
         $pages = 1;
     }
 
     if( 1 != $pages ) {
-        $rtmedia_media_pages .= "<div class='clear'></div><br />";        
+        $rtmedia_media_pages .= "<div class='clear'></div><br />";
         $rtmedia_media_pages .= "<div class='pagination text-right'>";
-        
+
         //if( $pages > 100 ) {
             $rtmedia_media_pages .= "<div class='rtmedia-page-no'>";
             $rtmedia_media_pages .= apply_filters( 'rtmedia_goto_page_label', __( "Go to page no : ", 'rtmedia' ) ) ;
@@ -953,38 +953,38 @@ function rtmedia_get_pagination_values(){
             $rtmedia_media_pages .= "<a class='rtmedia-page-link' data-page-type='num' href='#'>Go</a>";
             $rtmedia_media_pages .= "</div>";
         //}
-                
+
         if( $paged > 1 && $showitems < $pages ){
 			$page_url    = ( ( rtmedia_page() - 1 ) == 1 ) ? "" : "pg/" . ( rtmedia_page() - 1 );
 			$rtmedia_media_pages .= "<a class='rtmedia-page-link' data-page-type='prev' href='". $page_url ."'>&lsaquo;</a>";
 		}
 
-        
+
         if( $paged > 2 && $paged > $range+1 && $showitems < $pages ){
 			$page_url    = 'pg/1' ;
 			$rtmedia_media_pages .= "<a class='rtmedia-page-link' data-page-type='page' data-page='1' href='" . $page_url . "'>1</a><span>...</span>";
 		}
 
-        
+
         for ( $i=1; $i <= $pages; $i++ ) {
             if ( 1 != $pages && ( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ) ) {
 				$page_url    = 'pg/' . $i ;
                 $rtmedia_media_pages .= ($paged == $i)? "<span class='current'>".$i."</span>":"<a class='rtmedia-page-link' data-page-type='page' data-page='" . $i . "' href='" . $page_url . "' class='inactive' >".$i."</a>";
             }
         }
-        
+
         if ( $paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages ) {
 			$page_url    = 'pg/' . $pages;
 			$rtmedia_media_pages .= "<span>...</span><a class='rtmedia-page-link' data-page-type='page' data-page='" . $pages . "' href='". $page_url ."'>" . $pages . "</a>";
 		}
 
-        
+
         if ( $paged < $pages && $showitems < $pages ){
 			$page_url    = 'pg/' . ( rtmedia_page() + 1 );
 			$rtmedia_media_pages .= "<a class='rtmedia-page-link' data-page-type='next' href='" . $page_url . "'>&rsaquo;</a>";
 		}
 
-        
+
         $rtmedia_media_pages .= "</div>\n";
     }
 
@@ -1588,17 +1588,14 @@ function rtmedia_gallery_options() {
 	$options       = apply_filters( 'rtmedia_gallery_actions', $options );
 	if ( ! empty( $options ) ){
 
-		$options_start = '<span class="click-nav" id="rtm-media-options-list">
-                <span class="no-js">
-                <span class="clicker rtmedia-action-buttons"><i class="rtmicon-cog"></i>' . __( 'Options', 'rtmedia' ) . '</span>
-                <ul class="rtm-options">';
+		$options_start = '';
 		foreach ( $options as $action ) {
 			if ( $action != "" ){
-				$option_buttons .= "<li>" . $action . "</li>";
+				$option_buttons .= "<span class='left-option'>" . $action . "</span>";
 			}
 		}
 
-		$options_end = "</ul></span></span>";
+		$options_end = "";
 
 		if ( $option_buttons != "" ){
 			$output = $options_start . $option_buttons . $options_end;
