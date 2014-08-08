@@ -56,7 +56,33 @@ url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.woff') for
 url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.ttf')  format('truetype'), 
 url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.svg#Helvetica Neue') format('svg'); /* Legacy iOS */
 }
-	
+.list-unstyled #inicio a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/inicio.png");
+}	
+.list-unstyled #activity-personal-li a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/actividad.png");
+}	
+.list-unstyled #xprofile-personal-li a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/perfil.png");
+}	
+.list-unstyled #notifications-personal-li a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/notificaciones.png");
+}
+.list-unstyled #messages-personal-li a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/mensaje.png");
+}
+.list-unstyled #friends-personal-li a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/amigos.png");
+}
+.list-unstyled #groups-personal-li a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/grupos.png");
+}
+.list-unstyled #media-personal-li a:before {
+  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/multimedia.png");
+}
+.list-unstyled{
+	font-size: 11px;
+}
 	body{
 	font-family:"HelveticaNeue" !important;
 	direction: ltr;
