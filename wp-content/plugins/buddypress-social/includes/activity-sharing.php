@@ -17,7 +17,7 @@ function buddy_social_button_activity_filter() {
 
 
     ?><span class="bp-social-button">
-<a class="button item-button bp-secondary-action buddypress-social-button" rel="nofollow">Compartir</a></span>
+<a class="item-button bp-secondary-action buddypress-social-button" rel="nofollow">Compartir</a></span>
     
     <div class="social-buttons <?php $activity_type ?>" style="display: none;">
             <?php if(get_option('social_button_facebook')==1) echo "$buddy_social_facebook"; ?>

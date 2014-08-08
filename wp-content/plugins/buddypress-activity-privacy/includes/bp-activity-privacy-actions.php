@@ -104,7 +104,7 @@ function bp_update_activitiy_visibility_selectbox() {
 
 }
 //add_action('bp_activity_time_since', 'bp_update_activitiy_visibility_selectbox',10 ,1);
-add_action('bp_activity_entry_meta', 'bp_update_activitiy_visibility_selectbox',10);
+//add_action('bp_activity_entry_meta', 'bp_update_activitiy_visibility_selectbox',10);
 
 function bp_add_custom_style_selectbox(){
     ?>

@@ -269,7 +269,7 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 }
 #buddypress a.bp-secondary-action,
 #buddypress span.highlight {
-	font-size: 80%;
+	font-size: 1em;
 	padding: 0;
 	margin-right: 5px;
 	text-decoration: none;
@@ -344,7 +344,7 @@ body.activity-permalink #buddypress div.activity-meta {
 }
 #buddypress a.bp-primary-action,
 #buddypress #reply-title small a {
-	font-size: 80%;
+	font-size: 1em;
 	margin-right: 5px;
 	text-decoration: none;
 }
