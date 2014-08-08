@@ -83,7 +83,10 @@ body {
 iframe {
 	width: 100%;
 }
-
+.rtmedia-item-title
+{
+	display: none;
+}
 /*Victor Diaz*/
 img.avatar-activity
 {
