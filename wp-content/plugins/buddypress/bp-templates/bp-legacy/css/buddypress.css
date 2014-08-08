@@ -818,7 +818,8 @@ a.bp-title-button {
 }
 
 #buddypress div.item-list-tabs{
-	border: 1px solid #EAEAEA;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
 }
 #subnav li{
 	margin-right: 2% !important;
@@ -835,12 +836,16 @@ a.bp-title-button {
 	height: 50px;
 }
 
+#groups-list-options,#members-list-options{
+	margin-top: 6px;
+}
 #groups-list-options a{
 	margin-right: 20%;
 }
 #groups-list-options #popular-groups{
 		margin-right: 0px;
 }
+
 #members-list-options a{
 	margin-right: 20%;
 }
@@ -848,8 +853,8 @@ a.bp-title-button {
 		margin-right: 0px;
 }
 .friendship-button a{
-padding-left: 12px !important;
-padding-right: 12px !important;
+padding-left: 13px !important;
+padding-right: 13px !important;
 }
 #buddypress div#message p, #sitewide-notice p{
 	background: #00a798 !important;
@@ -1440,12 +1445,13 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	background-position: 88% 50%;
 }
 #buddypress div.item-list-tabs#object-nav {
-	margin-top: 0;
+	margin-top: -2px;
 }
 #buddypress div.item-list-tabs#subnav {
 	background: transparent;
-	margin: 10px 0 10px;
+	margin: 10px 0 0px;
 	overflow: hidden;
+	padding-bottom: 5px;
 }
 #buddypress #admins-list li,
 #buddypress #mods-list li,
@@ -1601,7 +1607,7 @@ body.register #buddypress div.page ul {
 
 .widget.buddypress div.item-options {
 	font-size: 90%;
-	margin: 0 0 1em 0;
+	margin: 0 0 0.5em 0;
 	/*padding: 1em 0;*/
 }
 
@@ -1628,6 +1634,7 @@ body.register #buddypress div.page ul {
 
 .widget.buddypress div.avatar-block{
 	overflow: hidden;
+	margin-top: 10px;
 }
 
 .widget.buddypress #bp-login-widget-form label {

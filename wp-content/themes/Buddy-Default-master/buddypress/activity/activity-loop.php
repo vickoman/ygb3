@@ -17,17 +17,17 @@
 	<?php endif; ?>
 
 	<?php //$act_cont=0; while ( bp_activities() ) : bp_the_activity(); ?>
-		
+
 		<?php //bp_get_template_part( 'activity/entry' ); ?>
 
 		<!-- Activity Cambio de Vickoman -->
 		<div class="row">
-			<div class="col-md-12 col-lg-12">
+			<div class="col-md-12 col-lg-12" style="background: #eaeaea;">
 				<div class="gridalicious-row gridalicious" data-toggle="gridalicious" data-gridalicious-width="340" data-gridalicious-gutter="12" data-gridalicious-selector=".gridalicious-item">
-					<?php do_action( 'bp_before_activity_entry' ); ?>	
+					<?php do_action( 'bp_before_activity_entry' ); ?>
 					<div class="galcolumn" id="item0Do7xq" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;"></div>
 						<div class="galcolumn" id="item1Do7xq" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;"></div>
-						<div id="clearDo7xq" style="clear: both; height: 0px; width: 0px; display: block;"></div><div class="galcolumn" id="item0gqOq9" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;">					
+						<div id="clearDo7xq" style="clear: both; height: 0px; width: 0px; display: block;"></div><div class="galcolumn" id="item0gqOq9" style="width: 49.22680412371135%; padding-left: 12px; padding-bottom: 12px; float: left; box-sizing: border-box;">
 							<!-- Widget Left -->
 							<?php $act_cont=1; while ( bp_activities() ) : bp_the_activity(); ?>
 							<?php if (($act_cont%2) != 0): ?>
@@ -37,7 +37,7 @@
 								<div class="bg-primary">
 									<div class="media">
 										<a href="<?php bp_activity_user_link(); ?>" class="pull-left"><?php echo  bp_get_activity_avatar(array('class'=>"avatar-activity", "type"=>"thumb")); ?><!-- <img src="../assets/images/people/50/15.jpg" width="50" class="media-object" style="width: auto; height: auto; display: block; margin-left: auto; margin-right: auto;"> --></a>
-										<div class="media-body innerTB half">											
+										<div class="media-body innerTB half">
 											<?php bp_activity_action(); ?>
 											<!-- <a href="" class="text-white strong display-block">Joanne Smith</a>
 											<span>on 15th January, 2014</span> -->
@@ -53,7 +53,7 @@
 									<?php bp_activity_content_body(); ?>
 								</div>
 								<?php endif; ?>
-								
+
 
 								<?php do_action( 'bp_activity_entry_content' ); ?>
 
@@ -88,10 +88,10 @@
 
 									<?php endif; ?>
 								</div>
-								
+
 								<!-- First Comment -->
-								
-									
+
+
 								<?php do_action( 'bp_before_activity_entry_comments' ); ?>
 
 								<?php if ( ( is_user_logged_in() && bp_activity_can_comment() ) || bp_is_single_activity() ) : ?>
@@ -102,7 +102,7 @@
 
 										<?php if ( is_user_logged_in() ) : ?>
 
-											<form action="<?php bp_activity_comment_form_action(); ?>" method="post" id="ac-form-<?php bp_activity_id(); ?>" class="ac-form"<?php bp_activity_comment_form_nojs_display(); ?>>					
+											<form action="<?php bp_activity_comment_form_action(); ?>" method="post" id="ac-form-<?php bp_activity_id(); ?>" class="ac-form"<?php bp_activity_comment_form_nojs_display(); ?>>
 												<div class="ac-reply-content">
 													<div class="ac-textarea">
 														<textarea id="ac-input-<?php bp_activity_id(); ?>" class="ac-input" name="ac_input_<?php bp_activity_id(); ?>"></textarea>
@@ -133,9 +133,9 @@
 									</div>
 								</div> -->
 
-								
+
 							</div>
-							<?php endif ?>							
+							<?php endif ?>
 							<?php $act_cont++; endwhile; ?>
 
 							<!-- End Widget Left -->
@@ -149,7 +149,7 @@
 								<div class="bg-primary">
 									<div class="media">
 										<a href="<?php bp_activity_user_link(); ?>" class="pull-left"><?php echo  bp_get_activity_avatar(array('class'=>"avatar-activity", "type"=>"thumb")); ?><!-- <img src="../assets/images/people/50/15.jpg" width="50" class="media-object" style="width: auto; height: auto; display: block; margin-left: auto; margin-right: auto;"> --></a>
-										<div class="media-body innerTB half">											
+										<div class="media-body innerTB half">
 											<?php bp_activity_action(); ?>
 											<!-- <a href="" class="text-white strong display-block">Joanne Smith</a>
 											<span>on 15th January, 2014</span> -->
@@ -165,13 +165,13 @@
 									<?php bp_activity_content_body(); ?>
 								</div>
 								<?php endif; ?>
-								
+
 
 								<?php do_action( 'bp_activity_entry_content' ); ?>
 
 								<!-- Comment -->
 								<div class="bg-gray innerAll border-top border-bottom text-small ">
-									
+
 									<?php if ( is_user_logged_in() ) : ?>
 
 										<?php if ( bp_activity_can_comment() ) : ?>
@@ -200,10 +200,10 @@
 
 									<?php endif; ?>
 								</div>
-								
+
 								<!-- First Comment -->
-								
-									
+
+
 								<?php do_action( 'bp_before_activity_entry_comments' ); ?>
 
 								<?php if ( ( is_user_logged_in() && bp_activity_can_comment() ) || bp_is_single_activity() ) : ?>
@@ -214,7 +214,7 @@
 
 										<?php if ( is_user_logged_in() ) : ?>
 
-											<form action="<?php bp_activity_comment_form_action(); ?>" method="post" id="ac-form-<?php bp_activity_id(); ?>" class="ac-form"<?php bp_activity_comment_form_nojs_display(); ?>>					
+											<form action="<?php bp_activity_comment_form_action(); ?>" method="post" id="ac-form-<?php bp_activity_id(); ?>" class="ac-form"<?php bp_activity_comment_form_nojs_display(); ?>>
 												<div class="ac-reply-content">
 													<div class="ac-textarea">
 														<textarea id="ac-input-<?php bp_activity_id(); ?>" class="ac-input" name="ac_input_<?php bp_activity_id(); ?>"></textarea>
@@ -245,9 +245,9 @@
 									</div>
 								</div> -->
 
-								
+
 							</div>
-							<?php endif ?>							
+							<?php endif ?>
 							<?php $act_cont2++; endwhile; ?>
 
 							<!-- End Widget Right -->

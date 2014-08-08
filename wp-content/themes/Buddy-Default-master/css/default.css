@@ -179,6 +179,12 @@ body.activity-permalink div#container {
 .list-unstyled #inicio a:before{
   content:url("../images/ico/inicio.png") !important;
 }
+.item-list-tabs{
+	font-size: 14px;
+}
+.profile{
+	background: #eaeaea;
+}
 .list-unstyled #home-li a:before{
   content: url("../images/ico/inicio.png") !important;
 }

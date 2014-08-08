@@ -160,7 +160,7 @@
 					<div class="input-group hidden-xs pull-left">
 						<form action="<?php echo bp_search_form_action(); ?>" method="post" id="search-form">
 					  	<span class="input-group-addon"><i class="icon-search"></i></span>
-					  	<input type="text" id="search-terms" name="search-terms" class="form-control" placeholder="Buscar Amigo" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
+					  	<input type="text" id="search-terms" name="search-terms" class="form-control" placeholder="Buscar amigos" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
 					  </form>
 					</div>
 				</div>
