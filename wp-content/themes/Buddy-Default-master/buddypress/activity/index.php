@@ -186,7 +186,7 @@
 
 	<?php do_action( 'bp_before_directory_activity_list' ); ?>
 
-	<div class="activity" role="main" style="background:transparent">
+	<div class="activity" role="main" style="background:#eaeaea">
 
 		<?php bp_get_template_part( 'activity/activity-loop' ); ?>
 

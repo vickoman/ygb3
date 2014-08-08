@@ -94,6 +94,10 @@ img.avatar-activity
 {
 	border-radius: 50%;
 }
+.gridalicious-item
+{
+	border: 1px solid #e2e2e2;
+}
 .bpfb_images,
 .thickbox
 {
