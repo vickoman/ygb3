@@ -1497,7 +1497,7 @@ body.register #buddypress div.page ul {
 .widget.buddypress div.item-options {
 	font-size: 90%;
 	margin: 0 0 1em 0;
-	padding: 1em 0;
+	/*padding: 1em 0;*/
 }
 
 .widget.buddypress div.item{
@@ -1511,9 +1511,9 @@ body.register #buddypress div.page ul {
 }
 
 .widget.buddypress ul.item-list img.avatar {
-	height: 20px;
+	height: 40px;
 	margin-right: 10px;
-	width: 20px;
+	width: 40px;
 }
 .widget.buddypress div.item-avatar img {
 	height: 40px;
