@@ -98,6 +98,16 @@ iframe {
 	padding: 8px;
 	background: #f2f2f2;
 	font-size: 16px;
+	margin-bottom: 0px;
+}
+li.vcard, li.public
+{
+	padding-top: 10px;
+	border-top: 1px solid #f2f2f2;
+}
+.item-meta
+{	
+	line-height: 15px;
 }
 /*Victor Diaz*/
 img.avatar-activity
