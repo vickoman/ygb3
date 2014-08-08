@@ -100,7 +100,7 @@ iframe {
 	font-size: 16px;
 	margin-bottom: 0px;
 }
-li.vcard
+li.vcard, li.public
 {
 	padding-top: 10px;
 	border-top: 1px solid #f2f2f2;
