@@ -45,7 +45,7 @@
         get_currentuserinfo();
 		?>
 		<link type="text/css" href="/cometchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
-<script type="text/javascript" src="/cometchat/cometchatjs.php" charset="utf-8"></script>
+		<script type="text/javascript" src="/cometchat/cometchatjs.php" charset="utf-8"></script>
 <style type="text/css">
 
 @font-face {
