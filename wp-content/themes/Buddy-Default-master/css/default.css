@@ -87,7 +87,18 @@ iframe {
 {
 	display: none;
 }
-
+.widget{
+	border: 1px solid #e2e2e2;
+}
+.widgettitle{
+	position: relative;
+	margin-top: -8px;
+	margin-left: -8px;
+	margin-right: -8px;
+	padding: 8px;
+	background: #f2f2f2;
+	font-size: 16px;
+}
 /*Victor Diaz*/
 img.avatar-activity
 {
