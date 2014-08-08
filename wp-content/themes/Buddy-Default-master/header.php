@@ -49,16 +49,16 @@
 <style type="text/css">
 
 @font-face {
-font-family: 'Helvetican';
-src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/224670411-HelveticaNeueLTCom-Th.eot'); /* IE9 Compat Modes */
-src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/224670411-HelveticaNeueLTCom-Th?#iefix') format('embedded-opentype'), 
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/224670411-HelveticaNeueLTCom-Th.woff') format('woff'), 
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/224670411-HelveticaNeueLTCom-Th.ttf')  format('truetype'), 
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/224670411-HelveticaNeueLTCom-Th.svg#Helvetica Neue') format('svg'); /* Legacy iOS */
+font-family: 'HelveticaNeue';
+src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.eot'); /* IE9 Compat Modes */
+src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue?#iefix') format('embedded-opentype'), 
+url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.woff') format('woff'), 
+url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.ttf')  format('truetype'), 
+url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.svg#Helvetica Neue') format('svg'); /* Legacy iOS */
 }
 	
 	body{
-	font-family:"Helvetican" !important;
+	font-family:"HelveticaNeue" !important;
 	direction: ltr;
 	}
 </style>
