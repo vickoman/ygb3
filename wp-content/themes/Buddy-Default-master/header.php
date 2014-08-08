@@ -6,6 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head profile="http://gmpg.org/xfn/11">
+
 		<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
@@ -46,49 +47,7 @@
 		?>
 		<link type="text/css" href="/cometchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
 		<script type="text/javascript" src="/cometchat/cometchatjs.php" charset="utf-8"></script>
-<style type="text/css">
 
-@font-face {
-font-family: 'HelveticaNeue';
-src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.eot'); /* IE9 Compat Modes */
-src: url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue?#iefix') format('embedded-opentype'),
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.woff') format('woff'),
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue-Thin.ttf')  format('truetype'),
-url('<?php echo get_stylesheet_directory_uri(); ?>/font/HelveticaNeue.svg#Helvetica Neue') format('svg'); /* Legacy iOS */
-}
-.color-d a{color:#ccc !important;"}
-.list-unstyled #inicio a:before, .list-unstyled #home-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/inicio.png");
-}
-.list-unstyled #activity-personal-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/actividad.png");
-}
-.list-unstyled #xprofile-personal-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/perfil.png");
-}
-.list-unstyled #notifications-personal-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/notificaciones.png");
-}
-.list-unstyled #messages-personal-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/mensaje.png");
-}
-.list-unstyled #friends-personal-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/amigos.png");
-}
-.list-unstyled #groups-personal-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/grupos.png");
-}
-.list-unstyled #media-personal-li a:before {
-  content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/ico/multimedia.png");
-}
-.list-unstyled{
-	font-size: 11px;
-}
-	body{
-	font-family:"HelveticaNeue" !important;
-	direction: ltr;
-	}
-</style>
 	</head>
 
 	<body id="bp-default" style="padding-top:60px;">

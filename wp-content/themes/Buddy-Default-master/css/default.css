@@ -65,6 +65,14 @@ a img{border:none;}
 /*--------------------------------------------------------------
 2.0 - Structural
 --------------------------------------------------------------*/
+@font-face {
+font-family: 'HelveticaNeue';
+src: url('../font/HelveticaNeue.eot'); /* IE9 Compat Modes */
+src: url('../font/HelveticaNeue?#iefix') format('embedded-opentype'),
+url('../font/HelveticaNeue.woff') format('woff'),
+url('../font/HelveticaNeue-Thin.ttf')  format('truetype'),
+url('../font/HelveticaNeue.svg#Helvetica Neue') format('svg'); /* Legacy iOS */
+}
 
 body {
 	background-color: #eaeaea;
@@ -73,7 +81,8 @@ body {
 	background-position: top left;
 	color: #555;
 	font-size: 100%;
-	font-family: Arial, Tahoma, Verdana, sans-serif;
+	font-family: "HelveticaNeue", Arial, Tahoma, Verdana, sans-serif;
+	direction: ltr;
 	line-height: 170%;
 	/*max-width: 1250px;*/
 	margin: 0 auto;
@@ -106,7 +115,7 @@ li.vcard, li.public
 	border-top: 1px solid #f2f2f2;
 }
 .item-meta
-{	
+{
 	line-height: 15px;
 }
 /*Victor Diaz*/
@@ -115,7 +124,7 @@ img.avatar-activity
 	height: 65px;
 	width: 65px;
 }
-.widget-body img 
+.widget-body img
 {
 	border-radius: 50%;
 }
@@ -164,6 +173,7 @@ body.activity-permalink div#container {
 	background: none;
 	border: none;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -724,6 +734,41 @@ a:focus {
 #nav :hover ul li a {
 	padding: 5px 5px 5px 10px;
 }
+
+/** css modificado **/
+.color-d a{color:#ccc !important;"}
+.list-unstyled #inicio a:before{
+  content: url("../images/ico/inicio.png") !important;
+}
+.list-unstyled #home-li a:before{
+  content: url("../images/ico/inicio.png") !important;
+}
+
+.list-unstyled #activity-personal-li a:before {
+  content: url("../images/ico/actividad.png");
+}
+.list-unstyled #xprofile-personal-li a:before {
+  content: url("../images/ico/perfil.png");
+}
+.list-unstyled #notifications-personal-li a:before {
+  content: url("../images/ico/notificaciones.png");
+}
+.list-unstyled #messages-personal-li a:before {
+  content: url("../images/ico/mensaje.png");
+}
+.list-unstyled #friends-personal-li a:before {
+  content: url("../images/ico/amigos.png");
+}
+.list-unstyled #groups-personal-li a:before {
+  content: url("../images/ico/grupos.png");
+}
+.list-unstyled #media-personal-li a:before {
+  content: url("../images/ico/multimedia.png");
+}
+.list-unstyled{
+	font-size: 11px;
+}
+
 
 
 /*--------------------------------------------------------------
