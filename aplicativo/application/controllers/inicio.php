@@ -26,9 +26,16 @@ class Inicio extends CI_Controller {
 		require_once APPPATH.'third_party/PasswordHash.php';
 		$t_hasher = new PasswordHash(8, TRUE);
 		//$hash = $t_hasher->HashPassword('Mm0925163347');
-		$correct = 'test12345';
-		$hash = $t_hasher->HashPassword($correct);
-		return $this->output->Set_output($hash);
+		//$correct = 'test12345';
+		//$hash = $t_hasher->HashPassword($correct);
+		//return $this->output->Set_output($hash);
+		$rpDS = $this->aplicativomodel->getlistado();
+
+		foreach ($$rpDS as $reg) {
+			$correct = $reg->cedula;
+			$hash = $t_hasher->HashPassword($correct);
+			echo $this->aplicativomodel->updateYogoPepa($hash, $reg->correo);
+		}
 		
 	}
 }

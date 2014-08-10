@@ -16,7 +16,7 @@ class Aplicativomodel extends CI_Model
 	public function getlistado()
 	{
 		$db_mario = $this->load->database('default', TRUE);
-		$query = $db_mario->query('select * from yogobierno3.yg_registro limit 3');
+		$query = $db_mario->query('select * from yogobierno3.yg_registro limit 1, 10');
 		return $query->result();
 	}
 
@@ -26,5 +26,14 @@ class Aplicativomodel extends CI_Model
 		$query = $db_pepa->query("select * from yogobierno30.wp_users limit 3");
 		return $query->result();
 	}	
+
+	public function updateYogoPepa($clave, $email){
+		$arrg = array(
+				'user_pass' => $clave
+			);
+		$this->db->where('user_email', $email);
+		$str = $this->db->update('wp_users', $arrg);
+		return $str;
+	}
 }
 ?>
