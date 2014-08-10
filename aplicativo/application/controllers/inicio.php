@@ -26,7 +26,9 @@ class Inicio extends CI_Controller {
 		require_once APPPATH.'third_party/PasswordHash.php';
 		$t_hasher = new PasswordHash(8, TRUE);
 		//$hash = $t_hasher->HashPassword('Mm0925163347');
-		echo var_dump($t_hasher);
+		$correct = 'test12345';
+		$hash = $t_hasher->HashPassword($correct);
+		var_dump($hash);
 		
 	}
 }
