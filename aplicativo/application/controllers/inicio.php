@@ -16,15 +16,14 @@ class Inicio extends CI_Controller {
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
-	require_once(APPPATH.'third_party/PasswordHash.php');
+	 */	
 	public function index()
 	{
 
 		// $this->load->model('aplicativomodel');		
 		// var_dump($this->aplicativomodel->getlistado());
 		// var_export($this->aplicativomodel->getlistado2());
-		
+		require_once APPPATH.'third_party/PasswordHash.php';
 		$t_hasher = new PasswordHash(8, TRUE);
 		//$hash = $t_hasher->HashPassword('Mm0925163347');
 		//var_export($hash)
