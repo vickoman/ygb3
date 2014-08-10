@@ -28,7 +28,7 @@ class Inicio extends CI_Controller {
 		//$hash = $t_hasher->HashPassword('Mm0925163347');
 		$correct = 'test12345';
 		$hash = $t_hasher->HashPassword($correct);
-		var_dump($hash);
+		return $this->output->Set_output($hash);
 		
 	}
 }
