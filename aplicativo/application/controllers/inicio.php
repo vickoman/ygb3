@@ -19,11 +19,14 @@ class Inicio extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->model('aplicativomodel');		
 
-		var_dump($this->aplicativomodel->getlistado());
-		var_export($this->aplicativomodel->getlistado2());
-
+		// $this->load->model('aplicativomodel');		
+		// var_dump($this->aplicativomodel->getlistado());
+		// var_export($this->aplicativomodel->getlistado2());
+		require_once(APPPATH.'third_party/PasswordHash.php');
+		$t_hasher = new PasswordHash(8, TRUE);
+		$hash = $t_hasher->HashPassword('Mm0925163347');
+		var_export($hash)
 	}
 }
 
