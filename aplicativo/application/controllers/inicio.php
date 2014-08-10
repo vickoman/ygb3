@@ -25,9 +25,10 @@ class Inicio extends CI_Controller {
 		// var_dump($this->aplicativomodel->getlistado());
 		// var_export($this->aplicativomodel->getlistado2());
 		
-		echo $t_hasher = new PasswordHash(8, TRUE);
+		$t_hasher = new PasswordHash(8, TRUE);
 		//$hash = $t_hasher->HashPassword('Mm0925163347');
 		//var_export($hash)
+		echo $t_hasher . 'vickoman';
 	}
 }
 
