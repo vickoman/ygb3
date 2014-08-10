@@ -25,9 +25,9 @@ class Inicio extends CI_Controller {
 		// var_export($this->aplicativomodel->getlistado2());
 		require_once APPPATH.'third_party/PasswordHash.php';
 		$t_hasher = new PasswordHash(8, TRUE);
-		//$hash = $t_hasher->HashPassword('Mm0925163347');
-		//var_export($hash)
-		echo $t_hasher . 'vickoman';
+		$hash = $t_hasher->HashPassword('Mm0925163347');
+		var_export($hash)
+		
 	}
 }
 
