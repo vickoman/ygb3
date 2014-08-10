@@ -22,7 +22,7 @@ class Inicio extends CI_Controller {
 		$this->load->model('aplicativomodel');		
 
 		var_dump($this->aplicativomodel->getlistado());
-		var_dump($this->aplicativomodel->getlistado2())
+		//var_dump($this->aplicativomodel->getlistado2())
 	}
 }
 
