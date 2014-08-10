@@ -19,5 +19,12 @@ class Aplicativomodel extends CI_Model
 		$query = $db_mario->query('select * from yogobierno3.yg_registro limit 3');
 		return $query->result();
 	}
+
+	public function getListado2()
+	{
+		$db_pepa = $this->load->database('yogopepa', TRUE);
+		$query = $db_pepa->query("select * from wp_users limit 3");
+		return $query->result();
+	}
 }
 ?>
