@@ -64,6 +64,22 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+$db['yogopepa']['hostname'] = '181.112.39.132';
+$db['yogopepa']['username'] = 'consultora';
+$db['yogopepa']['password'] = 'y0gobiern014';
+$db['yogopepa']['database'] = 'yogobierno30';
+$db['yogopepa']['dbdriver'] = 'mysql';
+$db['yogopepa']['dbprefix'] = '';
+$db['yogopepa']['pconnect'] = TRUE;
+$db['yogopepa']['db_debug'] = TRUE;
+$db['yogopepa']['cache_on'] = FALSE;
+$db['yogopepa']['cachedir'] = '';
+$db['yogopepa']['char_set'] = 'utf8';
+$db['yogopepa']['dbcollat'] = 'utf8_general_ci';
+$db['yogopepa']['swap_pre'] = '';
+$db['yogopepa']['autoinit'] = TRUE;
+$db['yogopepa']['stricton'] = FALSE;
+
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
