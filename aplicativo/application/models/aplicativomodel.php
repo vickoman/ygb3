@@ -27,12 +27,14 @@ class Aplicativomodel extends CI_Model
 		return $query->result();
 	}	
 
-	public function updateYogoPepa($clave, $email){
+	public function updateYogoPepa($clave, $email)
+	{
+		$db_pepa = $this->load->database('yogopepa', TRUE);
 		$arrg = array(
 				'user_pass' => $clave
 			);
-		$this->db->where('user_email', $email);
-		$str = $this->db->update('wp_users', $arrg);
+		$db_pepa->where('user_email', $email);
+		$str = $db_pepa->update('wp_users', $arrg);
 		return $str;
 	}
 }
