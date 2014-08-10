@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-require_once(APPPATH.'third_party/PasswordHash.php');
+
 class Inicio extends CI_Controller {
 
 	/**
@@ -17,6 +17,7 @@ class Inicio extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	require_once(APPPATH.'third_party/PasswordHash.php');
 	public function index()
 	{
 
@@ -24,9 +25,9 @@ class Inicio extends CI_Controller {
 		// var_dump($this->aplicativomodel->getlistado());
 		// var_export($this->aplicativomodel->getlistado2());
 		
-		$t_hasher = new PasswordHash(8, TRUE);
-		$hash = $t_hasher->HashPassword('Mm0925163347');
-		var_export($hash)
+		echo $t_hasher = new PasswordHash(8, TRUE);
+		//$hash = $t_hasher->HashPassword('Mm0925163347');
+		//var_export($hash)
 	}
 }
 
