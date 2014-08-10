@@ -29,14 +29,15 @@ class Inicio extends CI_Controller {
 		//$correct = 'test12345';
 		//$hash = $t_hasher->HashPassword($correct);
 		//return $this->output->Set_output($hash);
-		$rpDS = $this->aplicativomodel->getlistado();
-		$x=1;
-		foreach ($rpDS as $reg) {			
-			$correct = $reg->cedula;
-			$hash = $t_hasher->HashPassword($correct);			
-			echo $x . ' - ' . $reg->correo . ' - ' . $this->aplicativomodel->updateYogoPepa($hash, $reg->correo) . '<br>';
-			$x++;
-		}
+		// $rpDS = $this->aplicativomodel->getlistado();
+		// $x=1;
+		// foreach ($rpDS as $reg) {			
+		// 	$correct = $reg->cedula;
+		// 	$hash = $t_hasher->HashPassword($correct);			
+		// 	echo $x . ' - ' . $reg->correo . ' - ' . $this->aplicativomodel->updateYogoPepa($hash, $reg->correo) . '<br>';
+		// 	$x++;
+		// }
+		echo "No deberias estar aqui";
 		
 	}
 }
