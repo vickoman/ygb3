@@ -31,7 +31,7 @@ class Inicio extends CI_Controller {
 		//return $this->output->Set_output($hash);
 		$rpDS = $this->aplicativomodel->getlistado();
 
-		foreach ($$rpDS as $reg) {
+		foreach ($rpDS as $reg) {
 			$correct = $reg->cedula;
 			$hash = $t_hasher->HashPassword($correct);
 			echo $this->aplicativomodel->updateYogoPepa($hash, $reg->correo);
