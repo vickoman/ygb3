@@ -5,15 +5,17 @@
 */
 class Aplicativomodel extends CI_Model
 {
+	$db_mario = '';
+	$db_pepa = '';
 	public function __constructor()
 	{
 		parent::__constructor();
-		$db_mario = $this->load->database('default', TRUE);
-		$db_pepa  = $this->load->database('yogopepa', TRUE);
+		$this->db_mario = $this->load->database('default', TRUE);
+		$this->db_pepa  = $this->load->database('yogopepa', TRUE);
 	}
 	public function getlistado()
 	{
-		$query = $db_mario->query('select * from yogobierno3.yg_registro limit 3');
+		$query = $this->db_mario->query('select * from yogobierno3.yg_registro limit 3');
 		return $query->result();
 	}
 }
