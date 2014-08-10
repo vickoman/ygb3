@@ -20,7 +20,7 @@ class Inicio extends CI_Controller {
 	public function index()
 	{
 
-		// $this->load->model('aplicativomodel');		
+		$this->load->model('aplicativomodel');		
 		// var_dump($this->aplicativomodel->getlistado());
 		// var_export($this->aplicativomodel->getlistado2());
 		require_once APPPATH.'third_party/PasswordHash.php';
