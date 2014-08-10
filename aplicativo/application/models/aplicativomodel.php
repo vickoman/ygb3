@@ -16,7 +16,7 @@ class Aplicativomodel extends CI_Model
 	public function getlistado()
 	{
 		$db_mario = $this->load->database('default', TRUE);
-		$query = $db_mario->query('select * from yogobierno3.yg_registro limit 1001, 347');
+		$query = $db_mario->query('select * from yogobierno3.yg_registro limit 1348, 300');
 		return $query->result();
 	}
 
