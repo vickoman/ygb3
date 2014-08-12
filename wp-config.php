@@ -18,7 +18,7 @@ define('W3TC_EDGE_MODE', true); // Added by W3 Total Cache
  *
  * @package WordPress
  */
-
+define(‘FS_METHOD’,’direct’);
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
 define('DB_NAME', 'yogobierno3.0');
