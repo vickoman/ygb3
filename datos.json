@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "nombre": "Luis Antonio",
+    "Apellido": "Valencia",
+    "equipo": "Manabi"
+  },
+  {
+    "id": "1",
+    "nombre": "Alberto",
+    "Apellido": "Spencer",
+    "equipo": "Manabi"
+  },
+  {
+    "id": "1",
+    "nombre": "Jaime Ivan",
+    "Apellido": "Kaviedes",
+    "equipo": "Emelec"
+  },
+  {
+    "id": "1",
+    "nombre": "Jose Francisco",
+    "Apellido": "Cevallos",
+    "equipo": "Independiente del Valle"
+  }
+]
